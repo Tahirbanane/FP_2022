@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.4.13)  13 APR 2022 12:47
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.4.13)  15 APR 2022 02:16
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1357,43 +1357,35 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 \openout4 = main.toc
  [2
 
-] (./content/theorie.tex [3]
-
-LaTeX Warning: Reference `abb:1' on page 4 undefined on input line 86.
-
-) (./content/durchfuehrung.tex) (./content/auswertung.tex) (./content/diskussion.tex)
+] (./content/theorie.tex [3]) (./content/durchfuehrung.tex) (./content/auswertung.tex) (./content/diskussion.tex)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [4] [5] (./build/main.aux)
+ [4] (./build/main.aux)
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: A9A2BDFDA2C486F7984E22D1AB41A61F;5471.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 0BCF798389A5C70FD46AE14672EAD04C;4608.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: EFDE473AB725E2CAF5D6B1CCA6B9988E;732.
+(rerunfilecheck)             Checksum: A794DDF0ED6C4920896F205B6C362051;620.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 37756 strings out of 477762
+ 37738 strings out of 477762
  100000,1977958 words of node,token memory allocated
- 790 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 36 attribute, 76 glue_spec, 20 attribute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:3,2:752,3:182,4:76,5:448,6:29,7:6281,8:89,9:346,10:9,11:701,12:1
- 57347 multiletter control sequences out of 65536+600000
- 86 fonts using 32988959 bytes
- 113i,7n,117p,10617b,2933s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 771 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 28 attribute, 77 glue_spec, 16 attribute_list, 1 write, 3 pdf_action nodes
+   avail lists: 1:3,2:823,3:258,4:93,5:319,6:32,7:5890,8:97,9:164,10:8,11:599,12:1
+ 57333 multiletter control sequences out of 65536+600000
+ 84 fonts using 32725583 bytes
+ 113i,8n,117p,10617b,2933s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/tahirbanane/.local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/tahirbanane/.local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/tahirbanane/.local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/tahirbanane/.local/texlive/2022/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/tahirbanane/.local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/tahirbanane/.local/texlive/2022/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/tahirbanane/.local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/tahirbanane/.local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/tahirbanane/.local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/tahirbanane/.local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (5 pages, 57988 bytes).
+Output written on main.pdf (4 pages, 52746 bytes).
 
-PDF statistics: 171 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 131072)
- 65 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 159 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 131072)
+ 57 words of extra memory for PDF output out of 10000 (max. 100000000)
 

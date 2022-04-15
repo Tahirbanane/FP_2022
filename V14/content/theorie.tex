@@ -1,5 +1,5 @@
 \section{Ziel}
-Ziel des Versuches war es die Zusammensetzung eines 3x3-Würfels in einer seiner Ebene zu bestimmen, wobei die einzelnen Teilwürfel aus unterschiedlichen Metallen besteht. 
+Ziel des Versuches war es die Zusammensetzung eines 3x3x3-Würfels in einer seiner Ebene zu bestimmen, wobei die einzelnen Teilwürfel aus unterschiedlichen Metallen besteht. 
 
 \section{Theorie}
 \subsection{Tomographie}
@@ -30,10 +30,20 @@ Diese sind der Photoeffekt, die Compton-Streuung, sowie die Paarerzeugung.
   \end{equation}
 
   \noindent
-  Der Wirkungsquerschnitt $\sigma \propto Z^5E_\gamma^{-3,5}$ daher dominiert im Allgemeinen 
-  der Photoeffekt bei Energien <100keV und bei Kernen mit einer hohen Ladungszahl.
+  Der Wirkungsquerschnitt $\sigma$ ist $\propto Z^5E_\gamma^{-3,5}$, daher dominiert im Allgemeinen 
+  der Photoeffekt bei Energien <100keV und bei Kernen mit einer hohen Ladungszahl $Z$.
 
   \item \textbf{Comptonstreuung}:
+  Bei der Comptonstreuung,  auch inelastische Streuung genannt, trifft ein Photon auf ein quasi-freies Elektron. 
+  Das Photon gibt dabei einen Teil seiner Energie $\delta \symup{E}$
+  ab, sodass die Wellenlänge um $\delta\lambda = \lambda' - \lambda $ verändert wird.
+  Wichtig für den Energieübertrag ist dabei der Winkel in dem das Photon auf das Elektron trifft. Der 
+  Energieübertrag wird maximal für $180°$. Zudem werden beide Teilchen von ihrer ursprünglichen Bahn abgelenkt
+, sodass eine Streuung statt findet.
+
+\noindent
+Die Comptonstreuung dominiert für Energien im Bereicht von 100keV - 1MeV.
+
 
   \item \textbf{Paarerzeugung}:
   Bei der Paarerzeugung zerfällt ein Photon in einem Coulombfeld eines Teilchens in ein Teilchen-Antiteilchen Paar.
@@ -44,80 +54,7 @@ Diese sind der Photoeffekt, die Compton-Streuung, sowie die Paarerzeugung.
     E_\gamma =  2 \symup{m}_e \symup{c}^2 \, .
     \label{eqn:3}
   \end{equation}
-
 \end{enumerate}
-
-
-
-
-
-\subsection{Wechselwirkung von Gamma-Strahlung mit Materie}
-\textbf{!nicht abgeben!}
-Dieses Gesetz lässt sich gut auf $\gamma$-Strahlung anwenden, die in guter Näherung
-nur eine Wehcselwirkung pro $\gamma$-Quant durchführt. Quelle der $\gamma$-Strahlung ist
-hierbei das Abfallen angeregter Kernzustände auf energetisch stabilere, energieärmere
-Zustände. Die dabei verlorene Energie wird großteils in Form eines $\gamma$-Quants frei.
-Da die möglichen Energieniveaus eines gebundenen Elektrons diskret sind, ist auch das
-mögliche Spektrum der $\gamma$-Strahlung diskret. Die möglichen Wechselwirkungen mit Materie
-lassen sich dabei in Annihlationsprozesse sowie elastische- und inelastische Streuung
-einteilen. Bei den $\gamma$-Energien von
-\SI{10}{\kilo\electronvolt} bis \SI{10}{\mega\electronvolt} die in diesem Experiment
-erreicht werden, treten vor allem die folgenden drei Arten von Wechselwirkungen auf:
-\begin{enumerate}
-  \item \textbf{Photo-Effekt}: Beim (inneren) Photo-Effekt, einem Annihlationseffekt,
-  schlägt das einfallende $\gamma$-Quant ein Elektron aus der Hülle eines Teilchens.
-  Das $\gamma$-Quant wird dabei vernichtet, das Elektron erhält eine kinetische
-  Energie, die von der Energie des einfallenden $\gamma$-Teilchens ($E_\gamma = \symup{h}\nu$)
-  sowie der Bindungsenergie $E_{\symup{B}}$ des Elektrons abhängig und durch
-  \begin{equation}
-    E_{\symup{e}} = E_\gamma - E_{\symup{B}}
-    \label{eqn:2}
-  \end{equation}
-  gegeben ist. Die Bindungsenergie des Elektrons bietet daher eine untere Schranke
-  für die Energien, bei denen der Photo-Effekt eintritt. Die Impulserhaltung sorgt
-  weiter dafür, dass der Photo-Effekt in den inneren, stärker gebunden Elektronenschalen
-  wahrscheinlicher ist. Außerdem steigt die Wahrscheinlichkeit aus dem selben Grund
-  für schwere Atome, da die Bindungsenergie hier stärker ist.
-  \item \textbf{Compton-Effekt}: Als Compton-Effekt bezeichnet man die inelastische Streuung
-  von $\gamma$-Quanten an freien Elektronen. Bei hohen Energien kommen dafür auch die äußeren
-  Hüllenelektronen in Frage. Das $\gamma$-Quant wird dabei nicht vernichtete, es verliert einen
-  Teil seiner Energie und beschleunigt dabei das getroffene Elektron. Beide Teilchen bewegen
-  sich dabei weiter, ändern ihre Richtung jedoch (sie werden "gestreut"). Dadurch nimmt
-  die Intensität des Teilchenstrahls ab. Der dabei zu betrachtene Wirkungsquerschnitt bestimmt
-  sich jedoch nicht nach dem weiter oben genannten Zusammenhang, sondern durch:
-  \begin{equation}
-    \sigma_{\symup{com}} = 2 \pi r_{\symup{e}}^2 \left\{ \frac{1+\epsilon}{\epsilon^2} \left[ \frac{2(1+\epsilon)}
-    {1+2\epsilon} - \frac{1}{\epsilon} \ln(1+2\epsilon) \right] + \frac{1}{2\epsilon}
-    \ln(1+2\epsilon) - \frac{1+3\epsilon}{(1+2\epsilon)^2} \right\}
-    \label{eqn:5}
-  \end{equation}
-  mit $\epsilon = \symup{E}_\gamma / m_0c^2$. Mit %\eqref{eqn:5}
-  kann man nun aus der Massenzahl $z$, der Avogadro-Konstante $N_{\symup{A}}$,der Dichte $\rho$ und
-  der Molmasse $M$ durch:
-  \begin{equation}
-    \mu_{\symup{com}} = \frac{z N_{\symup{A}} \rho}{M} \cdot \sigma_{\symup{com}}(\epsilon)
-    \label{eqn:4}
-  \end{equation}
-  den Absorbtionskoeffizienten $\mu$ bestimmen. Für $\gamma$-Quanten, deren
-  Energie klein im Vergleich zur Ruheenergie des getroffenen Elektrons ist. $\sigma$ bestimmt sich
-  dann näherungsweise als
-  \begin{equation}
-    \sigma = \frac{8}{3} \pi \symup{r}_{\symup{e}}^2
-  \end{equation}
-  mit dem klassischen Elektronenradius $\symup{r}_{\symup{e}}$.
-  \item \textbf{Paarbildung}: Für sehr große $\gamma$-Energien oberhalb der doppelten
-  Ruhemasse der Elektronen, wird das $\gamma$-Quant unter Bildung eines Elektron-Positron-Paares
-  annihliert. Der Betrag $2 \symup{m}_0 \symup{c}^2$ ist hierbei als untere Schranke
-  nicht ausreichend, da ein weiterer Stoßpartner notwendig ist, der einen Teil des Impulses
-  des $\gamma$-Quants aufnimmt, damit der Vorgang der Impulserhaltung genügt.
-\end{enumerate}
-Die oben genannten Effekte treten beim Durchgang eines $\gamma$-Strahls durch ein
-Absorbermaterial zusammen auf und überlagern sich daher, es kann jedoch in bestimmten
-Energiebereichen eine Dominanz bestimmter Effekte beobachtet werden. Der Verlauf einer solchen
-Kurve ist in Abbildung \ref{abb:1} dargestellt.
-
-
-
 
 
 \subsection{Fehlerbestimmung}
