@@ -19,6 +19,51 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Zerfall}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{Abbildung für den Zerfall von Cs-137}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.leifiphysik.de/kern-teilchenphysik/radioaktivitaet-fortfuehrung/versuche/gammaspektrum-von-cs-137
+      \endverb
+      \verb{url}
+      \verb https://www.leifiphysik.de/kern-teilchenphysik/radioaktivitaet-fortfuehrung/versuche/gammaspektrum-von-cs-137
+      \endverb
+      \warn{\item Entry 'Zerfall' (lit.bib): Invalid format '2022-20-04' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{delrin}{online}{}
+      \name{author}{1}{}{%
+        {{hash=32ce325b739930b472e95470643145d0}{%
+           family={GmbH},
+           familyi={G\bibinitperiod},
+           given={Reichelt\bibnamedelima Chemietechnik},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{32ce325b739930b472e95470643145d0}
+      \strng{fullhash}{32ce325b739930b472e95470643145d0}
+      \strng{bibnamehash}{32ce325b739930b472e95470643145d0}
+      \strng{authorbibnamehash}{32ce325b739930b472e95470643145d0}
+      \strng{authornamehash}{32ce325b739930b472e95470643145d0}
+      \strng{authorfullhash}{32ce325b739930b472e95470643145d0}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Online}
+      \field{title}{polyoxymethylen}
+      \field{urlday}{4}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.rct-online.de/de/RctGlossar/detail/id/17
+      \endverb
+      \verb{url}
+      \verb https://www.rct-online.de/de/RctGlossar/detail/id/17
+      \endverb
+    \endentry
     \entry{matplotlib}{article}{}
       \name{author}{1}{}{%
         {{hash=a2f53dcc6bb05a06b8ad94176f80fe26}{%
@@ -176,6 +221,37 @@
       \verb http://www.numpy.org/
       \endverb
     \endentry
+    \entry{chemie}{online}{}
+      \name{author}{1}{}{%
+        {{hash=29a2dc0bc1f7dd496a73194589380628}{%
+           family={Technik},
+           familyi={T\bibinitperiod},
+           given={HUG},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{29a2dc0bc1f7dd496a73194589380628}
+      \strng{fullhash}{29a2dc0bc1f7dd496a73194589380628}
+      \strng{bibnamehash}{29a2dc0bc1f7dd496a73194589380628}
+      \strng{authorbibnamehash}{29a2dc0bc1f7dd496a73194589380628}
+      \strng{authornamehash}{29a2dc0bc1f7dd496a73194589380628}
+      \strng{authorfullhash}{29a2dc0bc1f7dd496a73194589380628}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Online}
+      \field{title}{Metallische Werkstoffe, Physikalische Eigenschaften}
+      \field{urlday}{4}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.hug-technik.com/inhalt/ta/metall.htm
+      \endverb
+      \verb{url}
+      \verb https://www.hug-technik.com/inhalt/ta/metall.htm
+      \endverb
+    \endentry
     \entry{V14}{manual}{}
       \list{organization}{1}{%
         {Fakultät Phyik, TU Dortmund}%
@@ -185,7 +261,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Versuchsanleitung zu Versuch V14}
       \field{year}{2022}
-      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection
