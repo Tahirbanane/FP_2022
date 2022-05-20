@@ -15,6 +15,4 @@
 \contentsline {subsection}{\numberline {4.2}Bestimmung der Absorptionskoeffizienten}{6}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Würfel 2}{6}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Würfel 3}{7}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Würfel 4}{7}{subsubsection.4.2.3}%
-\contentsline {section}{\numberline {5}Diskussion}{9}{section.5}%
-\contentsline {section}{\nonumberline Literatur}{9}{section*.10}%
+\contentsline {section}{\numberline {5}Diskussion}{7}{section.5}%

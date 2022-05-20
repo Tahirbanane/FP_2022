@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD:V14/main.bcf
 <bcf:controlfile version="3.7" bltxversion="3.14" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+||||||| cb4f235:V14/build/main.bcf
+<bcf:controlfile version="3.8" bltxversion="3.17" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+=======
+<bcf:controlfile version="3.7" bltxversion="3.15a" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+>>>>>>> 2a202ff3cbdd00191839573101688aa7b641eaab:V14/build/main.bcf
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -407,6 +413,7 @@
     <bcf:option datatype="boolean">sortfirstinits</bcf:option>
     <bcf:option datatype="boolean">sortgiveninits</bcf:option>
     <bcf:option datatype="boolean">labelyear</bcf:option>
+    <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="boolean">isbn</bcf:option>
     <bcf:option datatype="boolean">url</bcf:option>
     <bcf:option datatype="boolean">doi</bcf:option>
@@ -488,6 +495,7 @@
     <bcf:option datatype="boolean">dataonly</bcf:option>
     <bcf:option datatype="boolean">skiplos</bcf:option>
     <bcf:option datatype="boolean">labelyear</bcf:option>
+    <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="boolean">isbn</bcf:option>
     <bcf:option datatype="boolean">url</bcf:option>
     <bcf:option datatype="boolean">doi</bcf:option>
@@ -574,6 +582,7 @@
     <bcf:option datatype="boolean" backendout="1">skiplab</bcf:option>
     <bcf:option datatype="boolean" backendin="uniquename=false,uniquelist=false,skipbib=true,skipbiblist=true,skiplab=true">dataonly</bcf:option>
     <bcf:option datatype="boolean" backendout="1">skiplos</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="boolean" backendout="1">isbn</bcf:option>
     <bcf:option datatype="boolean" backendout="1">url</bcf:option>
     <bcf:option datatype="boolean" backendout="1">doi</bcf:option>
@@ -2183,9 +2192,19 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+<<<<<<< HEAD:V14/main.bcf
     <bcf:citekey order="1">numpy</bcf:citekey>
     <bcf:citekey order="2">matplotlib</bcf:citekey>
     <bcf:citekey order="3">uncertainties</bcf:citekey>
+||||||| cb4f235:V14/build/main.bcf
+=======
+    <bcf:citekey order="1">Zerfall</bcf:citekey>
+    <bcf:citekey order="2">Zerfall</bcf:citekey>
+    <bcf:citekey order="3">Zerfall</bcf:citekey>
+    <bcf:citekey order="4">V14</bcf:citekey>
+    <bcf:citekey order="5">V14</bcf:citekey>
+    <bcf:citekey order="6">V14</bcf:citekey>
+>>>>>>> 2a202ff3cbdd00191839573101688aa7b641eaab:V14/build/main.bcf
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
