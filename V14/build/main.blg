@@ -1,18 +1,24 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
-[1] Config.pm:310> INFO - Logfile is 'build/main.blg'
-[114] biber:340> INFO - === Wed Apr 13, 2022, 12:47:25
-[134] Biber.pm:418> INFO - Reading 'build/main.bcf'
-[219] Biber.pm:969> INFO - Using all citekeys in bib section 0
-[250] Biber.pm:4383> INFO - Processing section 0
-[288] Biber.pm:4574> INFO - Looking for bibtex file 'lit.bib' for section 0
-[299] bibtex.pm:1713> INFO - LaTeX decoding ...
-[315] bibtex.pm:1518> INFO - Found BibTeX data source 'lit.bib'
-[404] Biber.pm:4574> INFO - Looking for bibtex file 'programme.bib' for section 0
-[417] bibtex.pm:1713> INFO - LaTeX decoding ...
-[438] bibtex.pm:1518> INFO - Found BibTeX data source 'programme.bib'
-[506] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[507] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[507] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[508] Biber.pm:4209> INFO - No sort tailoring available for locale 'de-DE'
-[579] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[584] bbl.pm:757> INFO - Output to build/main.bbl
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'build/main.blg'
+[83] biber-darwin:322> INFO - === Fri May 20, 2022, 13:36:58
+[105] Biber.pm:415> INFO - Reading 'build/main.bcf'
+[189] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[202] Biber.pm:4256> INFO - Processing section 0
+[203] Utils.pm:75> INFO - Globbing data source 'lit.bib'
+[203] Utils.pm:91> INFO - Globbed data source 'lit.bib' to lit.bib
+[203] Utils.pm:75> INFO - Globbing data source 'programme.bib'
+[203] Utils.pm:91> INFO - Globbed data source 'programme.bib' to programme.bib
+[217] Biber.pm:4455> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[218] bibtex.pm:1653> INFO - LaTeX decoding ...
+[222] bibtex.pm:1471> INFO - Found BibTeX data source 'lit.bib'
+[240] Utils.pm:304> WARN - Entry 'Zerfall' (lit.bib): Invalid format '2022-20-04' of date field 'urldate' - ignoring
+[250] Biber.pm:4455> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[252] bibtex.pm:1653> INFO - LaTeX decoding ...
+[257] bibtex.pm:1471> INFO - Found BibTeX data source 'programme.bib'
+[290] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[290] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[290] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[290] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[305] bbl.pm:652> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[308] bbl.pm:755> INFO - Output to build/main.bbl
+[308] Biber.pm:128> INFO - WARNINGS: 1
