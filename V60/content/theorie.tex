@@ -9,15 +9,15 @@ The aim of this experiment is to study the working principle of a diode laser pr
 A laser (light amplification by stimulated emission of radiation) is a source of intensive coherent light through photon emission.
 Therefore a laser can be used to excite atoms and to pump energy into a medium.
 In atoms the electrons possess different discrete energy levels.
-The basic priciples of photon electron interaction are shown in figure (),
+The basic priciples of photon electron interaction are shown in figure \ref{emission},
 that includes absorption, spontaneous and stimulated emission of a photon.
 
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{emission.pdf}
-  \caption{Graphic for interaction between photon and electron \cite{V60}.}
-  \label{fig:zustand}
+  \includegraphics[width=9cm]{emission.pdf}
+  \caption{Graphic for interaction between photon and electron \cite{emissiongraphic}.}
+  \label{fig:emission}
 \end{figure}
 
 \noindent
@@ -27,14 +27,14 @@ The  most interesting process when it comes to a laser system, is the stimulated
 Stimulated emission is induced by an incoming photon which energy has to be equal to the gap energy.
 As a result two coherent photons with the same direction and energy will be emitted, what is fundamental to run a laser.
 In order to reach a higher probability of stimulated emission a population inversion is needed, where the electron density in the higher state has to be higher than in the lower state.
-This can only be achieved through pumping in an at least three energy level system as shown in figure ().
+This can only be achieved through pumping in an at least three energy level system as shown in figure \ref{fig:threelevel}.
 
-%\begin{figure}
-%  \centering
-%  \includegraphics[width=9cm]{zustand.pdf}
-%  \caption{Aufbau einer Röntgenröhre} %\cite{V603}}
-%  \label{fig:zustand}
-%\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=9cm]{threelevel.png}
+  \caption{Three level scheme \cite{threelevel}.} 
+  \label{fig:threelevel}
+\end{figure}
 
 \noindent
 The transition from level 1 to level 3 is induced by absorption of energy through continuously pumping with electric current.
@@ -44,12 +44,22 @@ Considering that level 3 has a higher decay rate than level 2 the pumping create
 
 \subsection{Diode-Laser}
 \noindent
+A basic configuration of a diode laser is shown in figure \ref{fig:diodesetup}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{diodesetup.png}
+    \caption{Basic configuration of a diode laser \cite{V60}.} 
+    \label{fig:diodesetup}
+  \end{figure}
+
+\noindent
 A lasing system is in need of four essential components.
 In the following the components itself and their net gain shown in figure \ref{fig:netgain} will be discussed.
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{net_gain.pdf}
+  \includegraphics[width=0.75\textwidth]{net_gain.pdf}
   \caption{Different contributions to the net gain of a laser as a function of wavelength \cite{V60}.}
   \label{fig:netgain}
 \end{figure}
@@ -87,3 +97,10 @@ The position of the modes can be varied by changing the position of the grating 
 \end{enumerate}
 
 \noindent
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{modehops.png}
+    \caption{Series of graphs showing the procedure of mode hopping \cite{V60}.}
+    \label{fig:modehops}
+  \end{figure}
