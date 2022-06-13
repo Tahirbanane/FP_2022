@@ -1,0 +1,222 @@
+\newpage
+\section{Auswertung}
+\label{sec:Auswertung}
+
+\noindent
+Alle Berechnungen werden mit Python mithilfe des Pakets NumPy \cite{numpy} durchgeführt und alle Plots mit matplotlib \cite{matplotlib} erstellt.
+Die Fehlerrechnung erfolgt mit dem Paket uncertainties \cite{uncertainties}.
+
+\subsection{Untersuchung des Spektrums}
+
+\noindent
+Das Spektrum der Caesium-Quelle mit Würfel 1 im Durchgang ist in Abbildung \ref{fig:spektrum} dargestellt. 
+Zu erkennen ist die Anzahl der gemessenen Ereignisse in dem jeweiligen Channel, in dem sich die Ereignisse befinden.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{data/spektrum.pdf}
+  \caption{Spektrum der Caesium-Quelle.}
+  \label{fig:spektrum}
+\end{figure}
+
+\noindent
+In dem Plot sind außerdem der Photopeak und die Comptonkante markiert.
+Bei Caesium liegen die Energien dieser Größen bei $E_{P} = 662 \text{ keV}$ und $E_{C} = 478 \text{ keV}$.
+
+\newpage
+\subsection{Bestimmung der Absorptionskoeffizienten}
+\noindent
+Im folgenden wird die Nullmessung ausgewertet, wobei sich bei der Messung nur die Aluminiumhülle (Würfel 1) im Strahlengang befindet, die Teil jedes Würfels ist.
+Die aufgenommenen Werte befinden sich in Tabelle \ref{tab:w1}.
+Die Intensitäten $I$ werden durch
+
+\begin{equation}
+  I = \frac{N}{t}
+\end{equation}
+
+\noindent
+bestimmt.
+
+\begin{table}
+  \centering
+  \sisetup{table-format=2.1}
+  \begin{tabular}{c c c c}
+  \toprule
+  $\text{Projektion}$ & $\text{Counts}$ & $\Delta t \,/\, s $ & $I_0 \,/\, \frac{1}{s} $\\
+  \midrule 
+    1  & 1705 & 150 & 11.367 $\pm$ 0.275 \\
+    2  & 1440 & 135 & 10.667 $\pm$ 0.281 \\
+    3  & 1571 & 142 & 11.063 $\pm$ 0.279 \\
+    4  & 2111 & 166 & 12.717 $\pm$ 0.277 \\
+    5  & 1424 & 102 & 13.717 $\pm$ 0.369 \\
+    6  & 2444 & 180 & 13.578 $\pm$ 0.275 \\
+    7  & 1633 & 165 & 9.897  $\pm$ 0.245 \\
+    8  & 1554 & 115 & 13.513 $\pm$ 0.343 \\
+    9  & 1126 & 107 & 10.523 $\pm$ 0.314 \\
+    10 & 1434 & 110 & 13.036 $\pm$ 0.344 \\
+    11 & 1432 & 102 & 14.039 $\pm$ 0.371 \\
+    12 & 1036 &  76 & 13.632 $\pm$ 0.424 \\
+  \bottomrule
+  \end{tabular}
+  \caption{Messwerte der $I_0$ Messung mit Würfel 1.}
+  \label{tab:w1}
+  \end{table}
+
+
+
+
+\subsubsection{Würfel 2}
+
+\noindent
+Aus den Messdaten werden die Absorptionskoeffizienten $\mu_i$ nach 
+
+\begin{equation}
+\mu_i = \frac{\text{ln}(\frac{I_0}{I_i})}{d_i}
+\label{eqn:mu}
+\end{equation}
+
+\noindent
+bestimmt. Dabei ist $d_i$ die Strahlenlänge durch den Würfel je nach Projektion.
+Es gilt:
+
+\begin{align*}
+d_{1,2,3,4,5,6} &= 3 \, \text{cm}       &\text{Senkrechte}\\
+d_{7,9,10,12} &= 2 \sqrt{2} \, \text{cm} &\text{Nebendiagonale}\\
+d_{8,11} &= 3 \sqrt{2} \, \text{cm} &\text{Hauptdiagonale}
+\end{align*}
+
+\begin{table}
+  \centering
+  \label{tab:w2}
+  \sisetup{table-format=2.1}
+  \begin{tabular}{c c c c c}
+  \toprule
+  $\text{Projektion}$ & $\text{Counts}$ & $\Delta t \,/\, s $ & $I_2 \,/\, \frac{1}{s} $ & $\mu \,/\, \frac{1}{cm}$\\
+  \midrule 
+ 1 & 1770 & 180 & 9.833 $\pm$ 0.234  & 0.048 \\
+ 2 & 1569 & 147 & 10.673 $\pm$ 0.269 & -0.0002 \\
+ 3 & 1185 & 99 & 11.969 $\pm$ 0.348  & -0.026 \\
+ 4 & 1731 & 150 & 11.54 $\pm$ 0.277  & 0.032 \\
+ 5 & 1477 & 141 & 10.475 $\pm$ 0.273 & 0.095 \\
+ 6 & 1417 & 123 & 11.52 $\pm$ 0.306  & 0.055 \\
+ 7 & 1094 & 170 & 6.435 $\pm$ 0.195  & 0.152 \\
+ 8 & 1580 & 150 & 10.533 $\pm$ 0.265 & 0.059 \\
+ 9 & 1126 & 94 & 11.979 $\pm$ 0.357  & -0.045 \\
+10 & 1337 & 160 & 8.356 $\pm$ 0.229  & 0.157 \\
+11 & 1805 & 199 & 9.07 $\pm$ 0.213   &  0.103 \\
+12 & 1063 & 147 & 7.231 $\pm$ 0.222  & 0.224 \\
+\bottomrule
+\end{tabular}
+\label{tab:w2}
+\caption{Messwerte von Würfel 2.}
+\end{table}
+
+\noindent
+Im folgenden werden die negativen Absorptionskoeffizienten nicht betrachtet, da diese nicht physikalisch sind.
+Für Würfel 2 ergibt sich dann der gemittelte Absorptionskoeffizient $\mu_2 = 0.1029 \, \frac{1}{cm}$.
+
+  
+  
+\subsubsection{Würfel 3}
+
+\noindent
+Analog zu Würfel 2 werden auch hier die Absorptionskoeffizienten bestimmt.
+Die dazugehörigen Daten befinden sich in Tabelle \ref{tab:w3}.
+
+\begin{table}
+\centering
+\sisetup{table-format=2.1}
+\begin{tabular}{c c c c c}
+\toprule
+$\text{Projektion}$ & $\text{Counts}$ & $\Delta t \,/\, s $ & $I_0 \,/\, \frac{1}{s} $ & $\mu \,/\, \frac{1}{cm} $\\
+ \midrule 
+ 1 & 199  & 300 & 0.663 $\pm$ 0.047 & 0.947  \\
+ 2 & 152  & 300 & 0.506 $\pm$ 0.041 & 1.016  \\
+ 3 & 165  & 300 & 0.55 $\pm$ 0.042  & 1.000 \\
+ 10 & 156 & 300& 0.52 $\pm$  0.042  & 1.130 \\
+ 11 & 95  & 300& 0.316 $\pm$ 0.032  & 0.892 \\
+ 12 & 310 & 300& 1.033 $\pm$ 0.059  & 0.911 \\
+\bottomrule
+\end{tabular}
+\caption{Messwerte von Würfel 3.}
+\label{tab:w3}
+\end{table}
+
+\noindent
+Gemittelt ergibt sich für Würfel 3 $\mu_3 = 0.9827 \, \frac{1}{cm}$.
+
+\subsubsection{Würfel 4}
+
+
+
+
+    \noindent
+    Da Würfel 4 aus verschiedenen kleinen Würfeln besteht, werden die Absorptionskoeffizienten mit
+  
+  \begin{equation}
+  \vec{\mu} = ( A^\top W A)^{-1}(A^\top W \vec{I})
+  \label{eqn:mu4}
+  \end{equation}
+  
+  \noindent
+  bestimmt.
+  Die Elemente der diagonalen Gewichtsmatrix $W$ werden mithilfe der Gauß'schen Fehlerfortpflanzung nach
+  
+    \begin{align*}
+        \sigma_{\text{j}}=& \left(\sqrt{\left(\frac{\sigma_{I_0}}{I_0}\right)^2+ \left(\frac{\sigma_{I_j}}{I_j}\right)^2}\right)\\
+        W_{\text{jj}}=& \sigma_{\text{j}}^{-1}
+    \end{align*}
+    
+    \noindent
+    berechnet.
+
+    \begin{table}
+      \centering
+      \sisetup{table-format=2.1}
+      \begin{tabular}{c c c c c}
+      \toprule
+      $\text{Projektion}$ & $\text{Counts}$ & $\Delta t \,/\, s $ & $I_0 \,/\, \frac{1}{s} $ & $W_{jj}$\\
+       \midrule 
+    1  & 987  & 300 & 3.29  $\pm$ 0.105   & 25.002 \\
+    2  & 1048 & 300 &   3.493 $\pm$ 0.108 &  24.628 \\
+    3  & 1132 & 300 &  3.773 $\pm$ 0.112  & 25.65 \\
+    4  & 1607 & 141 &  11.397 $\pm$ 0.284 &  30.206 \\
+    5  & 212  & 300 &  0.707 $\pm$ 0.049  & 13.584 \\
+    6  & 1917 & 169 &  11.343 $\pm$ 0.259 &  32.776 \\
+    7  & 1558 & 300 & 5.193  $\pm$ 0.132  & 28.237 \\
+    8  & 669  & 300 & 2.23  $\pm$ 0.086   &  21.625\\
+    9  & 1248 & 300 &   4.16 $\pm$ 0.118  &  24.329\\
+    10 &  2018 & 268 & 7.529 $\pm$  0.168 & 28.953  \\
+    11 &  373  & 300 & 1.243 $\pm$ 0.064  & 17.202 \\
+    12 &  1111 & 300 & 3.703 $\pm$ 0.111  & 23.153 \\
+      \bottomrule
+      \end{tabular}
+      \caption{Messwerte von Würfel 4.}
+      \label{tab:w4}
+      \end{table}
+
+\noindent
+Daraus ergeben sich nach Gleichung \ref{eqn:mu4} folgende Absorptionskoeffizienten für Würfel 4 in Tabelle \ref{tab:muj}.
+
+    \begin{table}
+      \centering
+      \sisetup{table-format=2.1}
+      \begin{tabular}{c c}
+      \toprule
+      $\text{j}$ & $\mu_j \,/\, \frac{1}{cm}$ \\
+       \midrule 
+    1  & 2.011  \\
+    2  & 0.562  \\
+    3  & 2.284   \\
+    4  & 4.701  \\
+    5  & -3.650   \\
+    6  & 3.661  \\
+    7  & 2.779   \\
+    8  & -1.119  \\
+    9  & 3.641   \\
+
+      \bottomrule
+      \end{tabular}
+      \caption{Absorptionskoeffizienten von Würfel 4.}
+      \label{tab:muj}
+      \end{table}
