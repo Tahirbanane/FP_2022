@@ -1,127 +1,149 @@
-\section{Ziel}
-Ziel des Versuches war es die Zusammensetzung eines 3x3x3-Würfels in einer seiner Ebene zu bestimmen, wobei die einzelnen Teilwürfel aus unterschiedlichen Metallen besteht. 
+\section{Zielsetzung}
+Ziel dieses Experiments ist es, quantenmechanische Modelle mit akustischen Systemen zu untersuchen und simulieren.
+Dazu werden verschiedene Hohlraumresonatoren verwendet.
 
-\section{Theorie}
-\subsection{Tomographie}
-Die Tomographie ist ein Bild-gebendes Verfahren, welches viel Anwendung in der heutigen Medizin findet. Besonders die so genannte Computertomographie, kurz CT, ist weit 
-verbreitet.
-Durch dieses Verfahren werden Querschnitte erzeugt und durch die Untersuchung mehrerer Schichten kann so ein 3 Dimesnionales Bild generiert werden.
+
+\section{Theoretische Grundlagen}
 
 \noindent
-Im Allgemeinen wird für die Tomographie $\gamma$-Strahlung benutzt. Durch die unterschiedlichen Absorptionskoeffizienten und durch die Bestrahlung des Targets aus 
-verschiedenen Winkeln kann ein Bild erzeugt werden.
+Schall ist eine Longitudinal-Welle die sich in einem Gas wie Luft ausbreitet.
+In diesem Versuch werden akustische Systeme aus Resonatoren aufgebaut.
+Schallwellen können mithilfe der Helmholtzgleichung 
 
-\subsection{Wechselwirkung von Materie mit Gamma-Strahlung}
-Die Quelle der $\gamma$-Strahlung ist im Versuch der Zerfall eines radioaktiven Isotops. In diesem zerfällt
-der Kern unter Aussendung eines $\gamma$-Quants in ein energetisch günstigeren Zustand. Dadurch ist das 
-Spektrum der $\gamma$-Strahlung diskret.
-
-\noindent
-$\gamma$-Strahlung wechselt wirkt hauptsächlich in 3 Art und Weisen mit Materie. 
-Diese sind der Photoeffekt, die Compton-Streuung, sowie die Paarerzeugung.
-\begin{enumerate}
-  \item \textbf{Photo-Effekt}:
-  Beim Photoeffekt wird ein Photon vollständig von einem gebundenen Elektron absorbiert so, dass dieses aus seiner Bindung herausgelöst wird. 
-  Dafür muss die Energie des $\gamma$-Quants ($E_\gamma = \symup{h}f$) mindestens die Bindungsenergie $E_B$ des Elektrons an den Kern betragen. Die
-  kinetische Energie des Elektrons lässt sich somit bestimmen zu 
-  \begin{equation}
-    E_{\symup{e}} = E_\gamma - E_{\symup{B}}
-    \label{eqn:1}
-  \end{equation}
-
-  \noindent
-  Der Wirkungsquerschnitt $\sigma$ ist $\propto Z^5E_\gamma^{-3,5}$, daher dominiert im Allgemeinen 
-  der Photoeffekt bei Energien <100keV und bei Kernen mit einer hohen Ladungszahl $Z$.
-
-  \item \textbf{Comptonstreuung}:
-  Bei der Comptonstreuung,  auch inelastische Streuung genannt, trifft ein Photon auf ein quasi-freies Elektron. 
-  Das Photon gibt dabei einen Teil seiner Energie $\delta \symup{E}$
-  ab, sodass die Wellenlänge um $\delta\lambda = \lambda' - \lambda $ verändert wird.
-  Wichtig für den Energieübertrag ist dabei der Winkel in dem das Photon auf das Elektron trifft. Der 
-  Energieübertrag wird maximal für $180°$. Zudem werden beide Teilchen von ihrer ursprünglichen Bahn abgelenkt
-, sodass eine Streuung statt findet.
+\begin{equation*}
+    \Delta P(\vec{r},t) = \frac{1}{c^2} \frac{\partial^2 P(\vec{r},t)}{\partial t^2}
+\end{equation*}
 
 \noindent
-Die Comptonstreuung dominiert für Energien im Bereicht von 100keV - 1MeV.
-
-
-  \item \textbf{Paarerzeugung}:
-  Bei der Paarerzeugung zerfällt ein Photon in einem Coulombfeld eines Teilchens in ein Teilchen-Antiteilchen Paar.
-  Die benötigte Mindestenergie für ein $\gamma$-Quant ist gesetzt durch die doppelte Masse des Elektrons (da diese
-  identisch mit der Masse des Positrons ist), da dieses Pärchen das leichteste ist, in welches es Zerfall kann.
-  Somit ist die Mindestenergie gegeben durch 
-  \begin{equation}
-    E_\gamma =  2 \symup{m}_e \symup{c}^2 \, .
-    \label{eqn:3}
-  \end{equation}
-\end{enumerate}
+als eine Verteilung der Druckamplitude $P(\vec{r},t)$ beschrieben werden.
+Dabei ist $c$ die Ausbreitungsgeschindigkeit der Welle.
 
 \noindent
-Da in diesem Versuch lediglich Energien bis $E_{\gamma} = 662$ keV erreicht werden, spielt der Effekt der Paarerzeugung keine wichtige Rolle. 
-
-
-\subsection{Radioaktiverzerfall}
-Wie bereits oben beschrieben wird als $\gamma$-Strahlungsquelle ein radioaktiver Zerfall benutzt. Es kann entweder ein $^{60} Co$ oder $^{137} Cs$-Strahler genutzt werden.
-Da im Versuch eine $^{137} Cs$ Quelle verwendet wurde wird expemplarisch nur auf diesen Zerfall eingegangen.
-
-\noindent
-Im dominierenden Zerfallskanal, mit einer Zerfallswahrscheinlichkeit von 94,4\%, zerfällt $^{137} Cs$ in einen angeregten Zustand vom Barium $^{137m} Ba$. Welches dann
-unter Emission eines Photons in den Grundzustand vom Barium $^{137} Ba$ übergeht. Bei diesem Zerfall eintsteht eine mittlere Photonenenergie von $E_{\gamma} = 661,7$ keV \cite{Zerfall}.
-Der Zerfall ist ebenfalls in Abbildung (\ref{fig:zer}) dargestellt.
-
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.75\textwidth]{zerfall.png}
-  \caption{Zerfall eines $^{137} Cs$ Atoms \cite{Zerfall}}
-  \label{fig:zer}
-\end{figure}
-
-
-\subsection{Abschwächung}
-Wenn Strahlung Materie durchdringt wechselwirkt sie mit dieser. Dardurch verliert sie Energie und es wird von einer Abschwächung gesprochen.
-Im Allgemeinen kann die Intensitätsveränderung beschrieben werden durch 
+Mit dem Separationsansatz $P(\vec{r},t) = p(\vec{r}) \cdot \cos(\omega t)$ ergibt sich eine stationäre Differentialgleichung für den Druck.
 
 \begin{equation}
-  N = I_0 exp \left(- \sum_i \mu_i d_i \right) \, .
-  \label{eqn:exp}
+    \Delta p(\vec{r}) = \frac{\omega^2}{c^2} p(\vec{r})
+    \label{eqn:helmholtz}
 \end{equation}
-
-Dabei sind $\mu_i$ die Absorptionskoeffizienten, $I_0$ die Eingansintensität und $d_i$ die Länge der Strecke, in welcher die Strahlung wechselwirkt. Dies 
-lässt sich nun umstellen zu 
-
-\begin{equation}
-  \sum_i \mu_i d_i = log \left( \frac{I_0}{N_j}  \right) = I_i \, .
-  \label{eqn:log}
-\end{equation}
-
-Hierbei steht $N_j$ für die jeweils gemessenen Ausgangsintensitäten. Aus diesem Zusammenhang kann ein LGS (kurz für Lineares Gleichungssystem) aufgestellt werden.
 
 \noindent
-Da im Versuch ein 3x3-Würfel tomographisch untersucht wurde, kann eine Matrix $\underline{\underline{A}}$ in dem Zusammenhang 
+Das quantenmechanische Analogon ist die Schrödingergleichung
+
+\begin{equation*}
+    -\frac{\hbar^2}{2m} \Delta \Psi(\vec{r},t) + V(\vec{r}) \Psi(\vec{r},t) = i\hbar \frac{\partial}{\partial t} \Psi(\vec{r},t)
+\end{equation*}
+
+\noindent
+deren Betragsquadrat die Wahrscheinlichkeitsdichte des Elektrons ist.
+
+\noindent
+Mit dem Separationsansatz $\Psi(\vec{r},t) = \psi(\vec{r}) \cdot e^{-i \omega t}$ ergibt sich die stationäre Schrödingergleichung
 
 \begin{equation}
-  \underline{\underline{A}} \vec{\mu} = \vec{I} 
-  \label{eqn:matrix}
+    -\frac{\hbar^2}{2m} \Delta \psi(\vec{r}) + V(\vec{r}) \psi(\vec{r}) = E \psi(\vec{r}).
+    \label{eqn:schroedinger}
 \end{equation}
 
-aufgestellt werden. Das LGS wird bewusst überbestimmt aufgestellt um eine hohe (Mess-)Fehleranfälligkeit zu senken, sodass die Matix (passend zu den Strahlengängen in der
-\autoref{fig:projektion}) aussieht wie in \autoref{fig:matrix} dargestellt ist.
+\subsection{Der eindimensionale Festkörper}
+\noindent
+Für eine stehende Welle in einem Potentialtopf der Länge $L$ müssen die Randbedingungen $ \psi(0) = \psi(L) = 0$ erfüllt sein.
+Mithilfe der stationären Schrödingergleichung \ref{eqn:schroedinger} ergibt sich eine ebene Welle  $\psi(x) = A \sin(kx)$ die die Randbedingungen für
 
-\begin{figure}[H]
-	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\centering
-		\includegraphics[width=4.5cm]{matrix.png}
-		\caption{Matrix A}
-    \label{fig:matrix}
-	\end{subfigure}
-	~
-	\begin{subfigure}[b]{0.45\textwidth}
-		\centering
-		\includegraphics[width=4.5cm]{projektion.png}
-		\caption{Schematische Darstellung der Strahlengänge durch den Würfel}
-    \label{fig:projektion}
-	\end{subfigure}
-\end{figure}
+\begin{equation}
+  k = \frac{n \pi }{L} \qquad \text{mit} \qquad n \in \mathbb{N}
+\end{equation}
 
+\noindent
+Damit sich eine stehende Welle in einem Hohlraumresonator der Länge $L$ ausbildet, muss gelten:
+
+\begin{equation}
+L = \frac{n\lambda}{2}
+\end{equation}
+
+\noindent
+Über die Kreiszahl $k=\frac{2\pi}{\lambda}$ kann die Bedingung umgeschrieben werden in 
+
+\begin{equation}
+  k = \frac{n \pi }{L} 
+\end{equation}
+
+\noindent
+und wir erhalten die gleiche Bedingung wie für den Potentialtopf.
+
+
+\noindent
+Durch Aneinanderreihung mehrerer Aluminiumzylinder mit Irisblenden kann der Übergang zwischen Atom, Mölekül und einem 1-dim. Festkörper simuliert werden.
+
+\noindent
+In einem 1-dim. Festkörper haben freie Elektronen die parabolische Dispersionsrelation
+
+\begin{equation*}
+  E = \frac{\hbar^2 k^2}{2m}.
+\end{equation*}
+
+\noindent
+Die freien Elektronen werden an den periodisch angeordneten Kernen des Festkörpers mit Abstand $d$ gestreut, wobei die Bragg Bedingung
+
+\begin{equation*}
+  n \lambda = 2d 
+\end{equation*}
+
+\noindent
+erfüllt sein muss. Somit gilt für die Kreiszahl
+
+\begin{equation*}
+k = \frac{n \pi}{d} 
+\end{equation*}
+
+\noindent
+Im akustischen Analogon simulieren Hohlraumzylinder die Einheitszellen des 1-dim. Festkörpers die verbunden sind durch Blenden die Streuzentren darstellen.
+
+
+\subsection{Das Wasserstoffatom}
+
+\noindent
+Das Wasserstoffatom unterliegt der Kugelsymmetrie des Coulombpotentials des geladenen Kerns $V(r) = -\frac{e^2}{4 \pi \epsilon_0 r}$.
+In Kugelkoordinaten kann die stationäre Schrödingergleichung \ref{eqn:schroedinger} mit dem Separationsansatz  $\psi(r,\varphi,\theta) = Y^m_l(\varphi,\theta) \cdot R_{n,l}(r)$
+in einen winkelabhängigen Teil
+
+\begin{equation*}
+    -\left[\frac{1}{\sin \theta} \, \frac{\partial}{\partial \theta} \left(\sin \theta \, \frac{\partial}{\partial \theta}\right) + \frac{1}{\sin^2 \theta} \, \frac{\partial^2}{\partial \phi^2}\right] Y^m_l(\varphi,\theta) = l(l+1) \, Y^m_l(\varphi,\theta)
+\end{equation*}
+
+\noindent
+und einen radialen Teil aufgeteilt werden, wobei der radialabhängige Teil nicht relevat ist, da er im Kugelresonator nicht realisiert werden kann.
+Der winkelabhängige Teil enthält die Kugelflächenfunktion
+
+\begin{equation}
+    Y^m_l(\varphi,\theta) = \frac{1}{\sqrt{2\pi}} \; \sqrt{\frac{2l+1}{2} \; \frac{(l-m)!}{(l+m)!}} \; P_{lm}\left(\cos \theta\right) e^{i m \varphi}
+\end{equation}
+
+\noindent
+mit den Legendre-Polynomen $P_{lm}$.
+Die auftretenden Quantenzahlen $n$, $l$ und $m$ sind dabei wie folgt definiert:
+
+\begin{align*}
+\text{Hauptquantenzahl  }    n &= 1, \, 2, \, \ldots  \\
+\text{Drehimpulsquantenzahl  }    l &= 0, \, 1, \, \ldots, \, n-1 \\
+\text{magnetische Quantenzahl  }    m &= -l, \, -l+1, \, \ldots, \, l-1, \, l
+\end{align*}
+
+\noindent
+Die Hauptquantenzahl $n$ beeinflusst die Energieeigenwerte $E = -\frac{E_{\text{ryd}}}{n^2}$ 
+
+\noindent
+Das akustische Analogon ist der Kugelresonantor, wobei die Helmholtzgleichung \ref{eqn:helmholtz} mit dem Separationsansatz  $p(r,\varphi,\theta) = Y^m_l(\varphi,\theta) \cdot F_{n,l}(r)$ in radialen und winkelabhängigen Teil aufgeteilt wird.
+Der winkelabhängige Teil wird durch die Kugelflächenfunktionen gelöst, der radiale Teil wird in diesem Versuch nicht beobachtet, da die $r$-Abhängigkeit die im Wasserstoffatom durch das Coulomb-Potential verursacht wird, im Kugelresonator nicht realisiert werden kann.
+Durch einsetzen eiens Zwischenrings im Kugelresonator wird ein Magnetfeld im Wasserstoffatom simuliert, welches die Entartung in $m$ aufhebt.
+
+\subsection{Das Wasserstoffmolekül}
+
+\noindent
+Das $\text{H}^+_2$-Molekül besteht aus einem Elektron welches sich im Coulomb-Potential zweier Kerne aufhält.
+Die sich dabei überlappenden Atomorbitale können dabei bindend oder antibindend sein.
+Bindende Überlappung liegt vor wenn die Wellenfunktionen das gleiche Vorzeichen haben, also symmetrisch zueinander stehen.
+Antibindende Überlappung liegt bei unterschieldlichen Vorzeichen vor, wenn die Wellenfunktionen antisymmetrisch sind.
+
+\noindent
+Das Wasserstoffatom wird in diesem Versuch durch zwei gekoppelte Kugelresonatoren simuliert, wobei Blenden eingesetzt werden können die im Analogon die Kopplungsstärke oder den Abstand der Wasserstoffkerne realisieren.
+Zwischen bindenden und antibindenden Zuständen kann durch eine Phasenverschiebung von 180° unterschieden werden.
