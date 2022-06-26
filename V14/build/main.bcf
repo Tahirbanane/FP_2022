@@ -2351,6 +2351,7 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+<<<<<<< HEAD
     <bcf:citekey order="1">Zerfall</bcf:citekey>
     <bcf:citekey order="2">Zerfall</bcf:citekey>
     <bcf:citekey order="3">Zerfall</bcf:citekey>
@@ -2360,6 +2361,25 @@
     <bcf:citekey order="7">numpy</bcf:citekey>
     <bcf:citekey order="8">matplotlib</bcf:citekey>
     <bcf:citekey order="9">uncertainties</bcf:citekey>
+||||||| 8f8fa60
+    <bcf:citekey order="1">numpy</bcf:citekey>
+    <bcf:citekey order="2">matplotlib</bcf:citekey>
+    <bcf:citekey order="3">uncertainties</bcf:citekey>
+=======
+    <bcf:citekey order="1">Zerfall</bcf:citekey>
+    <bcf:citekey order="2">Zerfall</bcf:citekey>
+    <bcf:citekey order="3">Zerfall</bcf:citekey>
+    <bcf:citekey order="4">V14</bcf:citekey>
+    <bcf:citekey order="5">V14</bcf:citekey>
+    <bcf:citekey order="6">V14</bcf:citekey>
+    <bcf:citekey order="7">numpy</bcf:citekey>
+    <bcf:citekey order="8">matplotlib</bcf:citekey>
+    <bcf:citekey order="9">uncertainties</bcf:citekey>
+    <bcf:citekey order="10">chemie</bcf:citekey>
+    <bcf:citekey order="11">delrin</bcf:citekey>
+    <bcf:citekey order="12">chemie</bcf:citekey>
+    <bcf:citekey order="13">delrin</bcf:citekey>
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

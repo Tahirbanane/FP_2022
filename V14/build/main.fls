@@ -452,6 +452,7 @@ INPUT build/main.toc
 OUTPUT build/main.toc
 INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
+<<<<<<< HEAD
 INPUT ./zerfall.png
 INPUT ./zerfall.png
 INPUT ./zerfall.png
@@ -466,6 +467,23 @@ INPUT /home/tahirbanane/.local/texlive/2020/texmf-var/luatex-cache/generic/fonts
 INPUT ./projektion.png
 INPUT ./projektion.png
 INPUT ./projektion.png
+||||||| 8f8fa60
+=======
+INPUT ./zerfall.png
+INPUT ./zerfall.png
+INPUT ./zerfall.png
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./matrix.png
+INPUT ./matrix.png
+INPUT ./matrix.png
+INPUT /Users/marinaandress/Library/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman9-regular.luc
+INPUT /Users/marinaandress/Library/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman9-bold.luc
+INPUT ./projektion.png
+INPUT ./projektion.png
+INPUT ./projektion.png
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./aufbau.png
@@ -476,8 +494,19 @@ INPUT ./content/auswertung.tex
 INPUT ./data/spektrum.pdf
 INPUT ./data/spektrum.pdf
 INPUT ./data/spektrum.pdf
+<<<<<<< HEAD
 INPUT /home/tahirbanane/.local/texlive/2020/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
 INPUT /home/tahirbanane/.local/texlive/2020/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
+||||||| 8f8fa60
+INPUT /Users/marinaandress/Library/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman8-regular.luc
+INPUT /Users/marinaandress/Library/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman5-regular.luc
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+=======
+INPUT /Users/marinaandress/Library/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman8-regular.luc
+INPUT /Users/marinaandress/Library/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman5-regular.luc
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT /home/tahirbanane/.local/texlive/2020/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc

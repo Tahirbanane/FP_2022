@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.11.3)  20 MAY 2022 13:21
+||||||| 8f8fa60
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.12.9)  20 MAY 2022 12:10
+=======
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.12.9)  20 MAY 2022 13:41
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1301,9 +1307,6 @@ Package csquotes Info: ... found 'babel' package.
 LaTeX Warning: Label `tab:w2' multiply defined.
 
 
-LaTeX Warning: Label `tab:w3' multiply defined.
-
-
 LaTeX Warning: Label `tab:lit' multiply defined.
 
 )
@@ -1515,14 +1518,31 @@ File: data/spektrum.pdf Graphic file (type pdf)
 <use data/spektrum.pdf>
 Package luatex.def Info: data/spektrum.pdf  used on input line 17.
 (luatex.def)             Requested size: 418.25555pt x 313.70677pt.
+<<<<<<< HEAD
  [8<./data/spektrum.pdf>]
 
 Package caption Warning: \label without proper reference on input line 42.
 See the caption package documentation for explanation.
 
+||||||| 8f8fa60
+ [5<./data/spektrum.pdf>]
 
+Package caption Warning: \label without proper reference on input line 42.
+See the caption package documentation for explanation.
+
+=======
+ [8<./data/spektrum.pdf>] [9] [10]) (./content/diskussion.tex [11]
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
+
+<<<<<<< HEAD
 LaTeX Warning: Reference `tab:w1' on page 9 undefined on input line 30.
+||||||| 8f8fa60
+LaTeX Warning: Reference `tab:w1' on page 6 undefined on input line 30.
+=======
+LaTeX Warning: Reference `tab:diskmu4' on page 12 undefined on input line 31.
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
 
+<<<<<<< HEAD
 [9] [10]) (./content/diskussion.tex [11]
 
 Package caption Warning: \label without proper reference on input line 193.
@@ -1538,12 +1558,63 @@ LaTeX Warning: Reference `tab:diskmu4' on page 12 undefined on input line 31.
 Overfull \hbox (15.28769pt too wide) in paragraph at lines 23--23
 \TU/lmtt/m/n/10.95 kern - teilchenphysik / radioaktivitaet - fortfuehrung / versuche / gammaspektrum -
  []
+||||||| 8f8fa60
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 62.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 62.
+[6] [7]) (./content/diskussion.tex [8]
 
+Package caption Warning: \label without proper reference on input line 193.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:w4' on page 9 undefined on input line 29.
+
+
+LaTeX Warning: Reference `tab:diskmu4' on page 9 undefined on input line 31.
+=======
+)
+Overfull \hbox (15.28769pt too wide) in paragraph at lines 23--23
+\TU/lmtt/m/n/10.95 kern - teilchenphysik / radioaktivitaet - fortfuehrung / versuche / gammaspektrum -
+ []
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
+
+<<<<<<< HEAD
 [12] [13] (./build/main.aux)
+||||||| 8f8fa60
+) [9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+ (./build/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+=======
+[12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+ (./build/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
 Package rerunfilecheck Info: File `main.aux' has not changed.
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: 84792114D36E87A71C0AF404D349CCFC;13916.
+||||||| 8f8fa60
+(rerunfilecheck)             Checksum: A2F3E424FC177B1D0D74786DD60314B1;12355.
+=======
+(rerunfilecheck)             Checksum: 2B130E058701081F4BABB79DDC860BEF;14093.
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
 Package rerunfilecheck Info: File `main.toc' has not changed.
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: 0281B6E93F996EB1DD3EBCDDF4524732;1641.
+||||||| 8f8fa60
+(rerunfilecheck)             Checksum: E8AA4B53E2E7C30ED213BC4A59525A1F;1596.
+=======
+(rerunfilecheck)             Checksum: 8353F014FF91318C6900F22379148CCC;1576.
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
 
 
 LaTeX Warning: There were undefined references.
@@ -1557,8 +1628,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
+<<<<<<< HEAD
  35624 strings out of 479005
+||||||| 8f8fa60
+ 35316 strings out of 480992
+=======
+ 35400 strings out of 480992
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
  100000,1977958 words of node,token memory allocated
+<<<<<<< HEAD
  854 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 61 attribute, 82 glue_spec, 32 attribute_list, 1 write, 4 pdf_action nodes
    avail lists: 1:2,2:1730,3:271,4:44,5:371,6:58,7:5863,8:118,9:796,10:16,11:598
@@ -1571,5 +1649,32 @@ Output written on main.pdf (13 pages, 1330935 bytes).
 PDF statistics: 376 PDF objects out of 1000 (max. 8388607)
  279 compressed objects within 3 object streams
  64 named destinations out of 1000 (max. 131072)
+||||||| 8f8fa60
+ 746 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 37 attribute, 81 glue_spec, 20 attribute_list, 1 write, 3 pdf_action nodes
+   avail lists: 1:5,2:1689,3:139,4:28,5:189,6:40,7:3387,8:87,9:508,10:8,11:320
+ 51826 multiletter control sequences out of 65536+600000
+ 118 fonts using 41296179 bytes
+ 59i,13n,114p,10117b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (10 pages, 88626 bytes).
+
+PDF statistics: 313 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 131072)
+=======
+ 830 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 59 attribute, 81 glue_spec, 31 attribute_list, 1 write, 6 pdf_action nodes
+   avail lists: 1:5,2:1680,3:177,4:34,5:189,6:41,7:3452,8:119,9:507,10:16,11:320
+ 51881 multiletter control sequences out of 65536+600000
+ 120 fonts using 41559619 bytes
+ 59i,13n,114p,10117b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (13 pages, 1332894 bytes).
+
+PDF statistics: 389 PDF objects out of 1000 (max. 8388607)
+ 290 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 131072)
+>>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
  145 words of extra memory for PDF output out of 10000 (max. 100000000)
 
