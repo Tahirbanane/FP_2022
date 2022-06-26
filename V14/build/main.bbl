@@ -19,6 +19,20 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Zerfall}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{Abbildung für den Zerfall von Cs-137}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.leifiphysik.de/kern-teilchenphysik/radioaktivitaet-fortfuehrung/versuche/gammaspektrum-von-cs-137
+      \endverb
+      \verb{url}
+      \verb https://www.leifiphysik.de/kern-teilchenphysik/radioaktivitaet-fortfuehrung/versuche/gammaspektrum-von-cs-137
+      \endverb
+      \warn{\item Entry 'Zerfall' (lit.bib): Invalid format '2022-20-04' of date field 'urldate' - ignoring}
+    \endentry
     \entry{matplotlib}{article}{}
       \name{author}{1}{}{%
         {{hash=a2f53dcc6bb05a06b8ad94176f80fe26}{%
@@ -185,7 +199,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Versuchsanleitung zu Versuch V14}
       \field{year}{2022}
-      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection
