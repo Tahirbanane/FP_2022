@@ -633,5 +633,43 @@ plt.savefig('../pic/festkoerper_stoerstelle/37,5mm.pdf')
 
 #--------Zylinderwechsel---------
 
+x_5_16, y_5_16 = np.genfromtxt('festkoerper/5x50mm_5x75mm_9x16mmBlende.dat', unpack = True)
 
+plt.figure()
+plt.plot(x_5_16, y_5_16)
+plt.xlabel(r'Frequenz in Hz')
+plt.ylabel(r'Amplitude')
+plt.tight_layout()
+plt.grid()
+plt.savefig('../pic/abwechselnd50u75.pdf')
 
+x50, y50  = np.genfromtxt('festkoerper/50mm.dat', unpack = True)
+plt.figure()
+plt.plot(x50, y50)
+plt.xlabel(r'Frequenz in Hz')
+plt.ylabel(r'Amplitude')
+plt.tight_layout()
+plt.grid()
+plt.savefig('../pic/nur50.pdf')
+
+x75, y75  = np.genfromtxt('festkoerper/75mm.dat', unpack = True)
+
+plt.figure()
+plt.plot(x75, y75)
+plt.xlabel(r'Frequenz in Hz')
+plt.ylabel(r'Amplitude')
+plt.tight_layout()
+plt.grid()
+plt.savefig('../pic/nur75.pdf')
+
+#---------13 u 16 abwechselnd--------
+
+x13_16, y13_16  = np.genfromtxt('festkoerper/8x75mm_4x16mmBlende_3x13mmBlende.dat', unpack = True)
+
+plt.figure()
+plt.plot(x13_16, y13_16)
+plt.xlabel(r'Frequenz in Hz')
+plt.ylabel(r'Amplitude')
+plt.tight_layout()
+plt.grid()
+plt.savefig('../pic/13u16.pdf')
