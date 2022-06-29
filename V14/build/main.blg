@@ -1,70 +1,20 @@
-<<<<<<< HEAD
 [0] Config.pm:312> INFO - This is Biber 2.15
 [0] Config.pm:315> INFO - Logfile is 'build/main.blg'
-[90] biber:330> INFO - === Fri May 20, 2022, 13:21:11
-[108] Biber.pm:415> INFO - Reading 'build/main.bcf'
-[184] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[201] Biber.pm:4334> INFO - Processing section 0
-[213] Biber.pm:4523> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[219] bibtex.pm:1682> INFO - LaTeX decoding ...
-[224] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
-[244] Utils.pm:395> WARN - Entry 'Zerfall' (lit.bib): Invalid format '2022-20-04' of date field 'urldate' - ignoring
-[249] Biber.pm:4523> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[252] bibtex.pm:1682> INFO - LaTeX decoding ...
-[259] bibtex.pm:1494> INFO - Found BibTeX data source 'programme.bib'
-[292] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[292] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[293] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[293] Biber.pm:4168> INFO - No sort tailoring available for locale 'de-DE'
-[303] bbl.pm:651> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[306] bbl.pm:754> INFO - Output to build/main.bbl
-[311] Biber.pm:128> INFO - WARNINGS: 1
-||||||| 8f8fa60
-[0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'build/main.blg'
-[91] biber-darwin:322> INFO - === Fri May 20, 2022, 11:39:16
-[109] Biber.pm:415> INFO - Reading 'build/main.bcf'
-[243] Biber.pm:940> INFO - Using all citekeys in bib section 0
-[293] Biber.pm:4256> INFO - Processing section 0
-[294] Utils.pm:75> INFO - Globbing data source 'lit.bib'
-[294] Utils.pm:91> INFO - Globbed data source 'lit.bib' to lit.bib
-[294] Utils.pm:75> INFO - Globbing data source 'programme.bib'
-[295] Utils.pm:91> INFO - Globbed data source 'programme.bib' to programme.bib
-[307] Biber.pm:4455> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[309] bibtex.pm:1653> INFO - LaTeX decoding ...
-[312] bibtex.pm:1471> INFO - Found BibTeX data source 'lit.bib'
-[339] Biber.pm:4455> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[341] bibtex.pm:1653> INFO - LaTeX decoding ...
-[346] bibtex.pm:1471> INFO - Found BibTeX data source 'programme.bib'
-[379] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[379] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[379] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[379] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
-[391] bbl.pm:652> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[394] bbl.pm:755> INFO - Output to build/main.bbl
-=======
-[0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'build/main.blg'
-[83] biber-darwin:322> INFO - === Fri May 20, 2022, 13:36:58
-[105] Biber.pm:415> INFO - Reading 'build/main.bcf'
-[189] Biber.pm:940> INFO - Using all citekeys in bib section 0
-[202] Biber.pm:4256> INFO - Processing section 0
-[203] Utils.pm:75> INFO - Globbing data source 'lit.bib'
-[203] Utils.pm:91> INFO - Globbed data source 'lit.bib' to lit.bib
-[203] Utils.pm:75> INFO - Globbing data source 'programme.bib'
-[203] Utils.pm:91> INFO - Globbed data source 'programme.bib' to programme.bib
-[217] Biber.pm:4455> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[218] bibtex.pm:1653> INFO - LaTeX decoding ...
-[222] bibtex.pm:1471> INFO - Found BibTeX data source 'lit.bib'
-[240] Utils.pm:304> WARN - Entry 'Zerfall' (lit.bib): Invalid format '2022-20-04' of date field 'urldate' - ignoring
-[250] Biber.pm:4455> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[252] bibtex.pm:1653> INFO - LaTeX decoding ...
-[257] bibtex.pm:1471> INFO - Found BibTeX data source 'programme.bib'
-[290] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[290] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[290] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[290] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
-[305] bbl.pm:652> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[308] bbl.pm:755> INFO - Output to build/main.bbl
-[308] Biber.pm:128> INFO - WARNINGS: 1
->>>>>>> cd2506f3cba5e8be2fdb5df68ac34253b7ee47e6
+[119] biber:330> INFO - === Wed Jun 29, 2022, 21:03:51
+[137] Biber.pm:415> INFO - Reading 'build/main.bcf'
+[231] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[245] Biber.pm:4334> INFO - Processing section 0
+[260] Biber.pm:4523> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[266] bibtex.pm:1682> INFO - LaTeX decoding ...
+[278] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
+[316] Utils.pm:395> WARN - Entry 'Zerfall' (lit.bib): Invalid format '2022-20-04' of date field 'urldate' - ignoring
+[325] Biber.pm:4523> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[330] bibtex.pm:1682> INFO - LaTeX decoding ...
+[343] bibtex.pm:1494> INFO - Found BibTeX data source 'programme.bib'
+[391] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[393] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[394] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[394] Biber.pm:4168> INFO - No sort tailoring available for locale 'de-DE'
+[412] bbl.pm:651> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[418] bbl.pm:754> INFO - Output to build/main.bbl
+[419] Biber.pm:128> INFO - WARNINGS: 1
