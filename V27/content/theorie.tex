@@ -1,0 +1,149 @@
+\section{Zielsetzung}
+Ziel dieses Experiments ist es, quantenmechanische Modelle mit akustischen Systemen zu untersuchen und simulieren.
+Dazu werden verschiedene Hohlraumresonatoren verwendet.
+
+
+\section{Theoretische Grundlagen}
+
+\noindent
+Schall ist eine Longitudinal-Welle die sich in einem Gas wie Luft ausbreitet.
+In diesem Versuch werden akustische Systeme aus Resonatoren aufgebaut.
+Schallwellen können mithilfe der Helmholtzgleichung 
+
+\begin{equation*}
+    \Delta P(\vec{r},t) = \frac{1}{c^2} \frac{\partial^2 P(\vec{r},t)}{\partial t^2}
+\end{equation*}
+
+\noindent
+als eine Verteilung der Druckamplitude $P(\vec{r},t)$ beschrieben werden.
+Dabei ist $c$ die Ausbreitungsgeschindigkeit der Welle.
+
+\noindent
+Mit dem Separationsansatz $P(\vec{r},t) = p(\vec{r}) \cdot \cos(\omega t)$ ergibt sich eine stationäre Differentialgleichung für den Druck.
+
+\begin{equation}
+    \Delta p(\vec{r}) = \frac{\omega^2}{c^2} p(\vec{r})
+    \label{eqn:helmholtz}
+\end{equation}
+
+\noindent
+Das quantenmechanische Analogon ist die Schrödingergleichung
+
+\begin{equation*}
+    -\frac{\hbar^2}{2m} \Delta \Psi(\vec{r},t) + V(\vec{r}) \Psi(\vec{r},t) = i\hbar \frac{\partial}{\partial t} \Psi(\vec{r},t)
+\end{equation*}
+
+\noindent
+deren Betragsquadrat die Wahrscheinlichkeitsdichte des Elektrons ist.
+
+\noindent
+Mit dem Separationsansatz $\Psi(\vec{r},t) = \psi(\vec{r}) \cdot e^{-i \omega t}$ ergibt sich die stationäre Schrödingergleichung
+
+\begin{equation}
+    -\frac{\hbar^2}{2m} \Delta \psi(\vec{r}) + V(\vec{r}) \psi(\vec{r}) = E \psi(\vec{r}).
+    \label{eqn:schroedinger}
+\end{equation}
+
+\subsection{Der eindimensionale Festkörper}
+\noindent
+Für eine stehende Welle in einem Potentialtopf der Länge $L$ müssen die Randbedingungen $ \psi(0) = \psi(L) = 0$ erfüllt sein.
+Mithilfe der stationären Schrödingergleichung \ref{eqn:schroedinger} ergibt sich eine ebene Welle  $\psi(x) = A \sin(kx)$ die die Randbedingungen für
+
+\begin{equation}
+  k = \frac{n \pi }{L} \qquad \text{mit} \qquad n \in \mathbb{N}
+\end{equation}
+
+\noindent
+Damit sich eine stehende Welle in einem Hohlraumresonator der Länge $L$ ausbildet, muss gelten:
+
+\begin{equation}
+L = \frac{n\lambda}{2}
+\end{equation}
+
+\noindent
+Über die Kreiszahl $k=\frac{2\pi}{\lambda}$ kann die Bedingung umgeschrieben werden in 
+
+\begin{equation}
+  k = \frac{n \pi }{L} 
+\end{equation}
+
+\noindent
+und wir erhalten die gleiche Bedingung wie für den Potentialtopf.
+
+
+\noindent
+Durch Aneinanderreihung mehrerer Aluminiumzylinder mit Irisblenden kann der Übergang zwischen Atom, Mölekül und einem 1-dim. Festkörper simuliert werden.
+
+\noindent
+In einem 1-dim. Festkörper haben freie Elektronen die parabolische Dispersionsrelation
+
+\begin{equation*}
+  E = \frac{\hbar^2 k^2}{2m}.
+\end{equation*}
+
+\noindent
+Die freien Elektronen werden an den periodisch angeordneten Kernen des Festkörpers mit Abstand $d$ gestreut, wobei die Bragg Bedingung
+
+\begin{equation*}
+  n \lambda = 2d 
+\end{equation*}
+
+\noindent
+erfüllt sein muss. Somit gilt für die Kreiszahl
+
+\begin{equation*}
+k = \frac{n \pi}{d} 
+\end{equation*}
+
+\noindent
+Im akustischen Analogon simulieren Hohlraumzylinder die Einheitszellen des 1-dim. Festkörpers die verbunden sind durch Blenden die Streuzentren darstellen.
+
+
+\subsection{Das Wasserstoffatom}
+
+\noindent
+Das Wasserstoffatom unterliegt der Kugelsymmetrie des Coulombpotentials des geladenen Kerns $V(r) = -\frac{e^2}{4 \pi \epsilon_0 r}$.
+In Kugelkoordinaten kann die stationäre Schrödingergleichung \ref{eqn:schroedinger} mit dem Separationsansatz  $\psi(r,\varphi,\theta) = Y^m_l(\varphi,\theta) \cdot R_{n,l}(r)$
+in einen winkelabhängigen Teil
+
+\begin{equation*}
+    -\left[\frac{1}{\sin \theta} \, \frac{\partial}{\partial \theta} \left(\sin \theta \, \frac{\partial}{\partial \theta}\right) + \frac{1}{\sin^2 \theta} \, \frac{\partial^2}{\partial \phi^2}\right] Y^m_l(\varphi,\theta) = l(l+1) \, Y^m_l(\varphi,\theta)
+\end{equation*}
+
+\noindent
+und einen radialen Teil aufgeteilt werden, wobei der radialabhängige Teil nicht relevat ist, da er im Kugelresonator nicht realisiert werden kann.
+Der winkelabhängige Teil enthält die Kugelflächenfunktion
+
+\begin{equation}
+    Y^m_l(\varphi,\theta) = \frac{1}{\sqrt{2\pi}} \; \sqrt{\frac{2l+1}{2} \; \frac{(l-m)!}{(l+m)!}} \; P_{lm}\left(\cos \theta\right) e^{i m \varphi}
+\end{equation}
+
+\noindent
+mit den Legendre-Polynomen $P_{lm}$.
+Die auftretenden Quantenzahlen $n$, $l$ und $m$ sind dabei wie folgt definiert:
+
+\begin{align*}
+\text{Hauptquantenzahl  }    n &= 1, \, 2, \, \ldots  \\
+\text{Drehimpulsquantenzahl  }    l &= 0, \, 1, \, \ldots, \, n-1 \\
+\text{magnetische Quantenzahl  }    m &= -l, \, -l+1, \, \ldots, \, l-1, \, l
+\end{align*}
+
+\noindent
+Die Hauptquantenzahl $n$ beeinflusst die Energieeigenwerte $E = -\frac{E_{\text{ryd}}}{n^2}$ 
+
+\noindent
+Das akustische Analogon ist der Kugelresonantor, wobei die Helmholtzgleichung \ref{eqn:helmholtz} mit dem Separationsansatz  $p(r,\varphi,\theta) = Y^m_l(\varphi,\theta) \cdot F_{n,l}(r)$ in radialen und winkelabhängigen Teil aufgeteilt wird.
+Der winkelabhängige Teil wird durch die Kugelflächenfunktionen gelöst, der radiale Teil wird in diesem Versuch nicht beobachtet, da die $r$-Abhängigkeit die im Wasserstoffatom durch das Coulomb-Potential verursacht wird, im Kugelresonator nicht realisiert werden kann.
+Durch einsetzen eiens Zwischenrings im Kugelresonator wird ein Magnetfeld im Wasserstoffatom simuliert, welches die Entartung in $m$ aufhebt.
+
+\subsection{Das Wasserstoffmolekül}
+
+\noindent
+Das $\text{H}^+_2$-Molekül besteht aus einem Elektron welches sich im Coulomb-Potential zweier Kerne aufhält.
+Die sich dabei überlappenden Atomorbitale können dabei bindend oder antibindend sein.
+Bindende Überlappung liegt vor wenn die Wellenfunktionen das gleiche Vorzeichen haben, also symmetrisch zueinander stehen.
+Antibindende Überlappung liegt bei unterschieldlichen Vorzeichen vor, wenn die Wellenfunktionen antisymmetrisch sind.
+
+\noindent
+Das Wasserstoffatom wird in diesem Versuch durch zwei gekoppelte Kugelresonatoren simuliert, wobei Blenden eingesetzt werden können die im Analogon die Kopplungsstärke oder den Abstand der Wasserstoffkerne realisieren.
+Zwischen bindenden und antibindenden Zuständen kann durch eine Phasenverschiebung von 180° unterschieden werden.
