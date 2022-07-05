@@ -402,7 +402,7 @@ max_9 = [
    y180_9[461]
 ]
 
-a=np.arange(0,185,10)#winkel
+#a=np.arange(0,185,10)#winkel
 cre_polar(max_9,"9mm")
 
 
