@@ -31,7 +31,7 @@ Die bei der Messung aufgenommenen Magnetfeldstärken $B$ bei angelegter Stromst�
 
 
 \noindent
-Die Messwerte werden mittels python an eine Funktion dritten Grades gefittet.
+Die Messwerte werden mittels der Funktion curve\_fit aus dem Paket scipy.optimize in Python an eine Funktion dritten Grades gefittet.
 Für die Fitfunktion
 
 \begin{equation*}
@@ -64,7 +64,7 @@ In Abbildung \ref{fig:rot} sind die Interferenzmuster der Spektrallinie der Well
 Dabei wurde Abbildung \ref{fig:rot1} ohne äußeres Magnetfeld aufgenommen.
 Bei der Aufnahme von Abbildung \ref{fig:rot1b} wurden die Elektromagneten mit einer maximalen Stromstärke von $I=5$ A betrieben, was nach der Eichung aus Kapitel \ref{sec:eich} einem Magnetfeld von $B= 455.87 \pm 60.21$ mT entspricht.
 Durch die Verwendung eines Polarisationsfilters wird nur die Emission des $\sigma$-Übergangs beobachtet.
-Die Abstände der Interferenzmaxima $\Delta s$ ohne B-Feld und $\delta s$ mit B-feld in Pixeln befinden sich in Tabelle \ref{tab:rot}.
+Die Abstände der Interferenzmaxima $\Delta s$ ohne B-Feld und $\delta s$ mit B-Feld in Pixeln befinden sich in Tabelle \ref{tab:rot}.
 
 
 \noindent
@@ -124,7 +124,7 @@ Mit der Formel
 \end{equation}
 
 \noindent
-und den Werten aus Tabelle \ref{tab:rot} sowie dem Dispersionsgebiet $\lambda_D = 48.91$ pm nach Formel \ref{eqn:dis}, kann nun die Wellenlängenverschiebung 
+und den Werten aus Tabelle \ref{tab:rot} sowie dem Dispersionsgebiet $\lambda_D = 48.91$ pm nach Formel \ref{eqn:lam}, kann nun die Wellenlängenverschiebung 
 
 \begin{equation*}
     \delta \lambda = 8.28 \pm 0.34 \, \text{pm}
@@ -138,7 +138,7 @@ berechnet werden. Wird nun die Energiedifferenz
 \end{equation}
 
 \noindent
-in Gleichung dcbskdhbc eingesetzt, kann der Landé-Faktor mit 
+in Gleichung \ref{eqn:anorm} eingesetzt, kann der Landé-Faktor mit 
 
 \begin{equation}
     \label{eqn:g}
@@ -175,7 +175,7 @@ Wird der Polarisationsfilter so gedreht, dass die $\pi$-Übergänge beobachtet w
 \end{figure}
 
 \noindent
-Wie in Kapitel %\ref{sec:durch}
+Wie in Kapitel \ref{sec:durch}
 bereits diskutiert wurde, ist bei dem $\pi$-Übergang der roten Spektrallinie keine Aufspaltung zu erwarten.
 
 \subsection{Blaue Spektralinie}
