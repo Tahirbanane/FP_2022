@@ -1,20 +1,14 @@
-[0] Config.pm:312> INFO - This is Biber 2.15
-[0] Config.pm:315> INFO - Logfile is 'build/main.blg'
-[119] biber:330> INFO - === Wed Jun 29, 2022, 21:03:51
-[137] Biber.pm:415> INFO - Reading 'build/main.bcf'
-[231] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[245] Biber.pm:4334> INFO - Processing section 0
-[260] Biber.pm:4523> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[266] bibtex.pm:1682> INFO - LaTeX decoding ...
-[278] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
-[316] Utils.pm:395> WARN - Entry 'Zerfall' (lit.bib): Invalid format '2022-20-04' of date field 'urldate' - ignoring
-[325] Biber.pm:4523> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[330] bibtex.pm:1682> INFO - LaTeX decoding ...
-[343] bibtex.pm:1494> INFO - Found BibTeX data source 'programme.bib'
-[391] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[393] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[394] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[394] Biber.pm:4168> INFO - No sort tailoring available for locale 'de-DE'
-[412] bbl.pm:651> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[418] bbl.pm:754> INFO - Output to build/main.bbl
-[419] Biber.pm:128> INFO - WARNINGS: 1
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'build/main.blg'
+[91] biber-darwin:322> INFO - === Thu Jul  7, 2022, 02:38:59
+[119] Biber.pm:415> INFO - Reading 'build/main.bcf'
+[203] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[216] Biber.pm:4256> INFO - Processing section 0
+[217] Utils.pm:75> INFO - Globbing data source 'lit.bib'
+[217] Utils.pm:91> INFO - Globbed data source 'lit.bib' to lit.bib
+[217] Utils.pm:75> INFO - Globbing data source 'programme.bib'
+[217] Utils.pm:91> INFO - Globbed data source 'programme.bib' to programme.bib
+[237] Biber.pm:4455> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[239] bibtex.pm:1653> INFO - LaTeX decoding ...
+[245] bibtex.pm:1471> INFO - Found BibTeX data source 'lit.bib'
+[276] Utils.pm:304> WARN - Entry 'energien' (lit.bib): Invalid format '2022-07-07' of date field 'urldate' - ignoring
