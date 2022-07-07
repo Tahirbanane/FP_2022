@@ -18,7 +18,9 @@ par, cov = curve_fit(Mag, I, B)
 
 errpar = np.sqrt(np.diag(cov))
 
-print(par[0],par[1], par[2], par[3] ,errpar[0], errpar[1], errpar[2], errpar[3])
+
+print(par)
+print(errpar)
 
 x = np.linspace(0, 5)
 
@@ -33,3 +35,13 @@ plt.legend(loc='best')
 plt.tight_layout()
 plt.savefig('Magnetfeld.pdf')
 plt.close()
+
+
+#from PIL import Image
+#
+#pic_array = np.array(Image.open("IMG_0040.JPG"))
+#print(pic_array[100])
+#
+#img = Image.open('IMG_0040.jpg')
+#imgGray = img.convert('L')
+#imgGray.save('test_gray.jpg')
