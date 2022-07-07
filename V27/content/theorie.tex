@@ -94,4 +94,78 @@ Dies führt dazu, dass Gesamtdrehimpulse $\vec{J}$ der Elektronenhülle aus den 
 \end{equation}
 
 
-% Auswahlregeln normaler Zeeman, anormaler zeeman
+% Auswahlregeln normaler Zeeman, anormaler Zeeman
+
+\subsection{Zeeman-Effekt}
+Der Zeemaneffekt ist in Magnetfeldern zu beobachten. Bei diesem kommt es durch ein anlegen eines äußeren Magnetfeldes zu einer äquidistanten Aufspaltung der Energieniveaus der im
+Magnetfeld befindenden Atome. Dies wird somit in deren Spektrallinien sichtbar. Dieser Effekt ist das Hauptaugenmerk des Versuches.
+
+\noindent
+Die Verschiebung der Energieniveaus lässt sich mit Hilfe des magnetischen Moments $\vec{\mu_J}$ und des B-Feldes beschreiben zu 
+\begin{equation}
+    E_\text{mag} = - \vec{\mu_J} \cdot \vec{B} = m g_J \mu_\text{B} |\vec{B}| \, .
+    \label{eqn:energie}
+\end{equation} 
+
+\subsection{Auswahlregeln}
+Zwischen den einzelnen Energieniveaus ist nicht jeder Übergang erlaubt. Dies wird deutlich, wenn mit Hilfe der Schrödingergleichung und der Lösung zweier ebener Wellen (mit Berücksichtigung
+des Spins), sowie der Schwingungsfrequenz
+
+\begin{equation}
+    f_{\alpha\beta}= \frac{E_{\alpha} - E_{\beta}}{\hbar}
+    \label{eqn:f}
+  \end{equation}
+
+\noindent
+und dem Dipolmoment 
+
+  \begin{equation}
+    -e_0\, \int x \, \Psi^* \Psi \, \text{dV}
+  \end{equation}
+
+der Poyntingvektor aufgestellt und gelöst wird. Aus dessen Lösung wird folgt, dass alle Beiträge verschwinden, außer wenn m die Zahlenwerte
+\begin{equation}
+  \Delta m = -1,0,1
+\end{equation}
+
+\noindent
+annimmt. Falls $\Delta m $ dem Wert $ \pm 1$ hat,  werden linkszirkular $\sigma^{+}-$ oder rechtszirkular $\sigma^{-}$-polarisierte
+Photonen emittiert, welche eine Drehimpulsänderung des Atoms mit Abführung ihres eigenen Drehimpulses ausgleichen,
+sodass der Gesamtdrehimpuls erhalten bleibt. 
+
+\noindent
+Falls $\Delta m $ dem Wert $0$ annimmt wird linear oder auch $\pi$-polarisiertes Licht genannt, emittiert,
+welches keine Drehimpulsänderung überträgt.
+ 
+\subsection{Der normaler Zeeman-Effekt}
+Der normale Zeeman Effekt ist eigentlich ein Sonderfall des Zeeman Effektes, obwohl der Name es anders vermuten lässt, denn dieser tritt nur bei Atomen auf, wenn der 
+Gesamtspin der Hüllenelektronen $S = 0$ beträgt und somit  gilt, dass der Landé-Faktor den Wert $g_J = 1$ besitzt (Dies gilt immer spinlose Zustände).
+
+\noindent
+Daraus folgt, mithilfe der Gleichung \ref{eqn:energie}, dass die Energieverschiebung 
+
+\begin{equation}
+    \Delta E = m \mu_\text{B} |\vec{B}| 
+\end{equation}
+
+\noindent
+beträgt. Dies ist ebenfalls in \autoref{fig:norm} zu sehen.
+
+\vspace{-5pt}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{normalerzeeman.png}
+    \caption{Schema beim normalen Zeeman-Effekt \cite{V27}.}
+    \label{fig:norm}
+\end{figure}
+
+\subsection{Der anormaler Zeeman-Effekt}
+
+Der anormale Zeeman tritt bei Atomen auf, deren Gesamtspin der Elektronenhülle nicht verschwindet: $S \neq 0$. Da der Landé-Faktor von L, J und S abhängen ist und nun nicht mehr 
+$g_J = const$ gilt, gibt es in der Regel mehr als 3 Übergänge zwischen den Energieniveaus die detektiert werden können. Somit muss die Energieverschiebung berechnet werden durch 
+
+\vspace{-15pt}
+\begin{equation}
+    \Delta E = \mu_\text{B}\,B\,(m_1 g_1 - m_2 g_2) \, .
+    \label{eqn:anorm}
+\end{equation}
