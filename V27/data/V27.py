@@ -98,4 +98,5 @@ print(f'LambdaBlau: {LambdaBlau}')
 print(f'gBlau: {gBlau}')
 
 print(f'relative abweichung grot: {Rel_Abw(0.94 , 1)}')
+print(f'relative abweichung gblau: {Rel_Abw(1.37 , 1.75)}')
 
