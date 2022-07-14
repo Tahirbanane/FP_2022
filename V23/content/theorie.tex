@@ -1,5 +1,5 @@
 \section{Zielsetzung}
-Ziel dieses Experiments ist es, quantenmechanische Modelle mit akustischen Systemen zu untersuchen und simulieren.
+Ziel dieses Experiments ist es, quantenmechanische Modelle mit akustischen Systemen zu untersuchen und zu simulieren.
 Dazu werden verschiedene Hohlraumresonatoren verwendet.
 
 
@@ -46,8 +46,8 @@ Mit dem Separationsansatz $\Psi(\vec{r},t) = \psi(\vec{r}) \cdot e^{-i \omega t}
 
 \subsection{Der eindimensionale Festkörper}
 \noindent
-Für eine stehende Welle in einem Potentialtopf der Länge $L$ müssen die Randbedingungen $ \psi(0) = \psi(L) = 0$ erfüllt sein.
-Mithilfe der stationären Schrödingergleichung \ref{eqn:schroedinger} ergibt sich eine ebene Welle  $\psi(x) = A \sin(kx)$ die die Randbedingungen für
+Für eine stehende Welle in einem unendlich hohen Potentialtopf der Länge $L$ müssen die Randbedingungen $ \psi(0) = \psi(L) = 0$ erfüllt sein.
+Mithilfe der stationären Schrödingergleichung \ref{eqn:schroedinger} ergibt sich eine ebene Welle  $\psi(x) = A \sin(kx)$ mit der Wellenzahl $k$. Unter Berücksichtigung der Randbedingungen lautet $k$
 
 \begin{equation}
   k = \frac{n \pi }{L} \qquad \text{mit} \qquad n \in \mathbb{N}
@@ -61,7 +61,7 @@ L = \frac{n\lambda}{2}
 \end{equation}
 
 \noindent
-Über die Kreiszahl $k=\frac{2\pi}{\lambda}$ kann die Bedingung umgeschrieben werden in 
+Über die Wellenzahl $k=\frac{2\pi}{\lambda}$ kann die Bedingung umgeschrieben werden in 
 
 \begin{equation}
   k = \frac{n \pi }{L} 
@@ -72,10 +72,10 @@ und wir erhalten die gleiche Bedingung wie für den Potentialtopf.
 
 
 \noindent
-Durch Aneinanderreihung mehrerer Aluminiumzylinder mit Irisblenden kann der Übergang zwischen Atom, Mölekül und einem 1-dim. Festkörper simuliert werden.
+Durch Aneinanderreihung mehrerer Aluminiumzylinder mit Irisblenden zwischen diesen, kann die Kopplung mehrerer Potentialtöpfe simuliert werden. Dies kann als Analog zu einem Übergang von einem Atom, über ein Molekül zu einem 1-dim. Festkörper verstanden werden.
 
 \noindent
-In einem 1-dim. Festkörper haben freie Elektronen die parabolische Dispersionsrelation
+Freie Elektronen haben die parabolische Dispersionsrelation
 
 \begin{equation*}
   E = \frac{\hbar^2 k^2}{2m}.
@@ -96,7 +96,7 @@ k = \frac{n \pi}{d}
 \end{equation*}
 
 \noindent
-Im akustischen Analogon simulieren Hohlraumzylinder die Einheitszellen des 1-dim. Festkörpers die verbunden sind durch Blenden die Streuzentren darstellen.
+Im akustischen Analogon simulieren durch Blenden verbundene Hohlraumzylinder die Einheitszellen des 1-dim. Festkörpers, wobei die Blenden die Streuzentren darstellen.
 
 
 \subsection{Das Wasserstoffatom}
@@ -111,7 +111,7 @@ in einen winkelabhängigen Teil
 \end{equation*}
 
 \noindent
-und einen radialen Teil aufgeteilt werden, wobei der radialabhängige Teil nicht relevat ist, da er im Kugelresonator nicht realisiert werden kann.
+und einen radialen Teil aufgeteilt werden, wobei der radialabhängige Teil nicht relevant ist, da er im Kugelresonator nicht realisiert werden kann.
 Der winkelabhängige Teil enthält die Kugelflächenfunktion
 
 \begin{equation}
@@ -129,21 +129,27 @@ Die auftretenden Quantenzahlen $n$, $l$ und $m$ sind dabei wie folgt definiert:
 \end{align*}
 
 \noindent
-Die Hauptquantenzahl $n$ beeinflusst die Energieeigenwerte $E = -\frac{E_{\text{ryd}}}{n^2}$ 
+Die Hauptquantenzahl $n$ beeinflusst die Energieeigenwerte $E = -\frac{E_{\text{ryd}}}{n^2}$.
+Die Energieeigenwerte sind jedoch nicht von $l$ oder $m$ abhängig und damit in diesen entartet. 
+Die Entartung in $l$ ist das Resultat des 1/r-Potentials, analog zur Erhaltung des Lenz-Runge-Vektors im Gravitationspotential, wohingegen die Entartung in $m$ aus der sphärischen Symmetrie des Wasserstoffproblems folgt.
 
 \noindent
 Das akustische Analogon ist der Kugelresonantor, wobei die Helmholtzgleichung \ref{eqn:helmholtz} mit dem Separationsansatz  $p(r,\varphi,\theta) = Y^m_l(\varphi,\theta) \cdot F_{n,l}(r)$ in radialen und winkelabhängigen Teil aufgeteilt wird.
 Der winkelabhängige Teil wird durch die Kugelflächenfunktionen gelöst, der radiale Teil wird in diesem Versuch nicht beobachtet, da die $r$-Abhängigkeit die im Wasserstoffatom durch das Coulomb-Potential verursacht wird, im Kugelresonator nicht realisiert werden kann.
-Durch einsetzen eiens Zwischenrings im Kugelresonator wird ein Magnetfeld im Wasserstoffatom simuliert, welches die Entartung in $m$ aufhebt.
+Durch einsetzen eines Zwischenrings im Kugelresonator wird ein Magnetfeld im Wasserstoffatom simuliert, welches die Entartung in $m$ aufhebt.
+Die Entartung in $l$ ist mangels Coulombpotential nicht realisiert und zu verschiedenen $l$-Werten gehören verschiedene Resonanzfrequenzen.
 
 \subsection{Das Wasserstoffmolekül}
 
 \noindent
 Das $\text{H}^+_2$-Molekül besteht aus einem Elektron welches sich im Coulomb-Potential zweier Kerne aufhält.
 Die sich dabei überlappenden Atomorbitale können dabei bindend oder antibindend sein.
-Bindende Überlappung liegt vor wenn die Wellenfunktionen das gleiche Vorzeichen haben, also symmetrisch zueinander stehen.
-Antibindende Überlappung liegt bei unterschieldlichen Vorzeichen vor, wenn die Wellenfunktionen antisymmetrisch sind.
+Bindende Überlappung liegt vor wenn die Wellenfunktionen das gleiche Vorzeichen haben, also symmetrisch (gerade) zueinander stehen.
+Antibindende Überlappung liegt bei unterschiedlichen Vorzeichen vor, wenn die Wellenfunktionen antisymmetrisch (ungerade) sind.
+Somit gibt es einen $2\sigma_{u/g}$-Zustand, der aus der Bindung zweier $l=1$, $m=0$-Zustände zusammengesetzt ist. Ebenso gibt es einen $1\pi_{u/g}$-Zustand, der aus zwei gebundenen $l$=1, $m$=1-Zuständen besteht.
 
 \noindent
 Das Wasserstoffatom wird in diesem Versuch durch zwei gekoppelte Kugelresonatoren simuliert, wobei Blenden eingesetzt werden können die im Analogon die Kopplungsstärke oder den Abstand der Wasserstoffkerne realisieren.
 Zwischen bindenden und antibindenden Zuständen kann durch eine Phasenverschiebung von 180° unterschieden werden.
+
+ 
