@@ -17,6 +17,11 @@ T2, I2, t2 = np.genfromtxt('2erSchritte.txt', unpack=True)
 T1 += 273.15 #Celsius in Kelvin
 T2 += 273.15 #Celsius in Kelvin
 
+print(np.where(np.max(I1)==I1))
+print(I1,I1[71],T1[71])
+
+print(np.where(np.max(I2)==I2))
+
 def gerade(x,m,b):
     return m*x+b
 
@@ -104,7 +109,7 @@ plt.tight_layout()
 plt.legend(loc='best')
 
 
-plt.show()
+#plt.show()
 #plt.savefig('IT2_ohneU.png')
 
 
