@@ -1,5 +1,5 @@
 \section{Zielsetzung}
-Ziel des Versuches ist es, die Dipolrelaxation von Ionenkristallen zu untersuchen.
+Ziel des Versuches ist es, die Dipolrelaxation in Ionenkristallen zu untersuchen.
 Dafür soll die Relaxationszeit der Dipole sowie die Aktivierungsenergie ermittelt werden.
 
 \section{Theoretische Grundlagen}
@@ -16,13 +16,13 @@ Die Zeit die ein Dipolmoment für eine Umorientierung benötigt, ist durch
 
 \begin{equation}
     \label{eqn:tau}
-    \tau(T) = \tau_0 e^{\frac{W}{k_B T}}
+    \tau(T) = \tau_0 e^{\frac{W}{\text{k}_\text{B} T}}
 \end{equation}
 
 \noindent
-gegeben, wobei $\tau_0$ die charakteristische Relaxationszeit für $\tau(T \to \infty)$.
+gegeben, wobei $\tau_0$ die charakteristische Relaxationszeit für $\tau(T \to \infty)$ ist.
 Befindet sich der Ionenkristall in einen elektrischen Feld, richten sich die Dipolmomente entlang der Feldlinien aus.
-Wird ein erwärmter Kristall in einem elektrischen Feld abgekühlt, ändert sich die Ausrichtung der Dipolmomente auch nach abschalten des elektrischen Feldes nicht, da sich die Leerstellen bei niedrigen Temperaturen nicht mehr verschieben.
+Wird ein Kristall mit ausgerichteten Dipolen in einem elektrischen Feld abgekühlt, ändert sich die Ausrichtung der Dipolmomente auch nach abschalten des elektrischen Feldes nicht, da sich die Leerstellen bei niedrigen Temperaturen nicht mehr verschieben.
 Wenn der Kristall wieder langsam erwärmt wird, kommt es zur Relaxation und die Dipolmomente richten sich zurück in ihren Anfangszustand aus.
 Geschieht dies in einem unaufgeladenen Plattenkondensator, kann durch Induktion ein Polarisationsstrom gemessen werden.
 In den folgenden Kapiteln soll der Polarisationsstrom hergeleitet werden.
@@ -50,13 +50,12 @@ Wird Gleichung \ref{eqn:p} in Gleichung \ref{eqn:j} eingesetzt und der Exponent 
     j(T) = \frac{P_0}{\tau} \text{exp} \Bigl( - \int_0^t \frac{\text{d}t}{\tau(T)} \Bigr),    
 \end{equation} 
 
+\noindent
 und mit der Heizrate $b := \frac{dT}{dt}$:
 
 \begin{equation}
     j(T) = \frac{P_0}{\tau} \text{exp} \Biggl( - \int_{T_0}^T exp \Bigl( -\frac{W}{k_B T'} \Bigr) \text{d}T' \Biggr).
 \end{equation}
-\noindent
-ausdrücken.
 
 
 \subsection{Herleitung des Polarisationsstroms über  den Polarisationsansatz}
@@ -84,7 +83,8 @@ wobei $N_p$ die Zahl der bestehenden ausgerichteten Dipole pro Volumen zum Begin
 Schließlich lässt sich der Polarisationsstrom durch
 
 \begin{equation}
-    j(T) = \frac{p^2 E N_p}{3 k_B T_p \tau_0} \text{exp} \Biggl(-\frac{1}{b} \int_{T_0}^{T} \text{exp} \Bigl( - \frac{W}{k_B T'} \Bigr) \text{d}T' \Biggr)\cdot 
+    \label{eqn:lj}
+    j(T) = \frac{p^2 E N_p}{3 k_B T_p \tau_0} \text{exp} \Biggl(-\frac{1}{b \tau_0} \int_{T_0}^{T} \text{exp} \Bigl( - \frac{W}{k_B T'} \Bigr) \text{d}T' \Biggr)\cdot 
     \text{exp} \Bigl( - \frac{W}{k_B T'} \Bigr)
 \end{equation}
 
@@ -96,10 +96,28 @@ ausdrücken, wobei für tiefe Temperaturen die Näherung
 \end{equation}
 
 \noindent
-gilt.
+gilt. 
+Wird Gleichung \ref{eqn:lj} nach der Temperatur differenziert, ergibt sich folgende Proportionalität:
+
+\begin{equation}
+    \frac{\mathrm{d}j(T)}{\mathrm{d}T} \propto \frac{1}{\tau_{0}} \left( -\frac{1}{b\tau_{0}} \int_{T_{0}}^{T}
+    \exp\frac{W}{k_{B}T} \mathrm{d}T' - \frac{W}{k_{B}T} \right) \left( \frac{W}{k_{B}T^{2}} - \frac{ 1 }{ b \tau_{0} }
+    \left( \exp -\frac{W}{k_{B} T} \right) \right)\,.
+    \label{di_dt}
+\end{equation}
+
+\noindent
+Es folgt für $\tau_0$ in Abhängigkeit der Maximaltemperatur
+
+\begin{equation}
+    τ_0 = τ\l(T_{\text{max}}\r) \exp\!\!\left(-\frac{W}{k_b T_{\text{max}}}\right)
+     = \frac{k_{B}T^{2}_{\text{max}}}{W b}
+      \exp\!\!\left(-\frac{W}{k_b T_{\text{max}}}\right)\,.
+    \label{eqn:theo-tau}
+\end{equation}
 
 \subsection{Die Aktivierungsenergie}
-Die Änderung der Polarisation führt  zu einem einem Strom um den Querschnitt $F$ und es gilt
+Die Änderung der Polarisation führt  zu einem einem Strom durch den Querschnitt $F$ und es gilt
 
 \begin{equation}
     \label{eqn:kp}
