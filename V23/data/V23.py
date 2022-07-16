@@ -329,11 +329,11 @@ plt.savefig('../pic/aufspaltung.pdf')
 #code dreist von https://github.com/komrozik/FP2021/blob/main/V23-Quanten_Analogien/plot.py übernommen
 def cre_polar(data,name):
     plt.close()
-    rho = np.concatenate([data,data[::-1],data,data[::-1]])
-    r = np.linspace(1, 2, len(rho))
-    theta = 2 * np.pi * r
+    #rho = np.concatenate([data,data[::-1]])
+    theta = np.linspace(0, np.pi, len(data))
     a=np.arange(0,185,10)
-    plt.polar(theta,rho/max(rho))
+    plt.polar(theta,data/max(data))
+    plt.polar(theta+np.pi,np.flip(data)/max(data))
     plt.savefig("../pic/polar_"+f"{name}.pdf")
     plt.close()
 
