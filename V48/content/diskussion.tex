@@ -1,46 +1,49 @@
 \section{Diskussion}
 \label{sec:Diskussion}
 
-Wenn die Heizraten, welche mit unterschiedlichen Methoden berechnet wurden, mit einander verglichen werden, dann fällt auf, dass diese etwas von einander abweichen. Diese lässt sich 
+Wenn die Heizraten, welche mit unterschiedlichen Methoden berechnet wurden, miteinander verglichen werden, dann fällt auf, dass diese etwas voneinander abweichen. Diese lässt sich 
 nach 
-\begin{equation*}
+\begin{equation}
+    \label{eqn:abweichung}
     \Delta W_{\%} = \frac{W_1-W_2}{W_1}
-\end{equation*}
+\end{equation}
 \noindent
-berechnen, wobei man $W_1$ und $W_2$ die zu untersuchenden Zahlen sind und $\Delta W_{\%}$ die Abweichung von $W_1$ zu $W_2$ angibt.
+berechnen, wobei $W_1$ und $W_2$ die zu untersuchenden Zahlen sind und $\Delta W_{\%}$ die Abweichung von $W_1$ zu $W_2$ angibt.
 
 \begin{align*}
-    \Delta W_{1,\%} &=  9,49\%   \\
-    \Delta W_{2,\%} &=  6,84\%
+    \Delta W_{1,\%} &=  21,30\%   \\
+    \Delta W_{2,\%} &=  45,51\%
   \end{align*}
 
-Dies kann zum einen daran liegen das ein paar Werte nicht ausgewertet werden konnten, da Aufgrund der Approximation des Untergrundes negative Zahlenwerte, sowie nullen, enstanden sind, welche
-im Logarithmus nicht zum einem finiten Zahlenwert führen bzw. nicht definiert sind. Daher fehlen diese auch in den Plots. Besonders stark viel dies bei der 2. Messung ins Gewicht.
-Ein anderer Grund an der Wahl der Intervalle die Untersucht werden.
+  \noindent
+Dies kann zum einen daran liegen, dass ein paar Werte nicht ausgewertet werden konnten, da Aufgrund der Approximation des Untergrundes negative Zahlenwerte, sowie Nullen, enstanden sind, welche
+im Logarithmus nicht zum einem finiten Zahlenwert führen beziehungsweise nicht definiert sind. Daher fehlen diese auch in den Plots. Besonders stark fiel dies bei der 2. Messung ins Gewicht.
+Ein weiterer Grund kann in der Wahl der zu untersuchenden Intervalle liegen, da es zum Beispiel für die Steigung der Ausgleichsgeraden in \autoref{fig:met1b} einen drastischen Unterschied gemacht hat, ob der Punkt, bei
+ungefähr $0,0044$K, im Interpolationsintervall drin liegt oder nicht.
 
 \noindent
-Zudem kann der Mittelwert der Aktivierungsenergie aus den beiden Methoden gemittelt werden um dies mit dem Theoriewert vergleichen zu können. Dieser beträgt $W_\text{theo} = 0,66$ eV \cite{muccillo}.
+Die Ergebnisse der beiden Messungen, sowie der beiden Auswertungsmethoden können mit den Theoriewerten aus der Literatur verglichen werden. 
+Der Wert für die Aktivierungsenergie beträgt $W_\text{theo} = 0,66$ eV und der Theoriewert für die Relaxationszeit ist bei $\tau_\text{theo} = 4 \, \cdot 10^{-14}$s. \cite{muccillo}.
 
-\begin{align*}
-    W_\text{gemittelt,1} &= 0,725  \si{\electronvolt}\\
-    W_\text{gemittelt,2} &= 0,7955 \si{\electronvolt}\\
-    \Delta W_{1,\%} &=  9,85\%   \\
-    \Delta W_{2,\%} &=  20,53\%
-  \end{align*}
+\begin{table}[h]
+  \centering
+  \caption{Die Abweichung von den Theoriewerten für die Aktivierungsenergie $W$, sowie die Relaxationszeit $\tau$ berechnet nach \autoref{eqn:abweichung}.}
+  \label{tab:ergebnisse}
+  \begin{tabular}{c c c c c}
+    \toprule
+    &\multicolumn{2}{c}{Methode 1} &\multicolumn{2}{c}{Methode 2}\\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                 &$ \Delta W$  &$\Delta \tau$ & $\Delta W$    & $\Delta \tau$   \\
+    \midrule
+    Messung 1    & $(28,05 \pm 8,93)\%$              & $0,77 \pm 0,09$& $(13,97 \pm 7,08)\%$                 & $7,33 \pm 4,40$  \\   
+    Messung 2    & $(63,71 \pm 7,93)\%$              & $0,86 \pm 0,08$ & $(58,46 \pm 4,54)\%$                 & $0,96\pm 0,2$  \\   
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 \noindent
-Das selbe kann auch für die Relaxationszeit gemacht werden. Der Theoriewert für die Relaxationszeit ist bei $\tau_\text{theo} = 4 \, \cdot 10^{-14}$s. 
-
-\begin{align*}
-    \tau_\text{gemittelt,1} &= 1,02 \cdot 10^{-13} \si{\second}\\
-    \tau_\text{gemittelt,2} &= 0,90035 \cdot 10^{-14} \si{\second}\\
-    \Delta \tau_{1,\%} &=  155\%   \\
-    \Delta \tau_{2,\%} &=  77,49\% \\
-\end{align*}
-
-\noindent
-Diese starken Abweichungen können aus unterschiedlichen Gründen zustandekommen. Es gab hin und wieder bei dem Ablesen der Werte Probleme, da leichte Erschütterungen schon die Naddel
-wackeln liesen, genau wie Bewegungen in der Nähe des pico-Ampermeters. Zudem war die Heizrate nicht ganz konstant und musste immer wieder händisch nachgeregelt werden.
+Diese starken Abweichungen können aus unterschiedlichen Gründen zustandekommen. Es gab hin und wieder bei dem Ablesen der Werte Probleme, da leichte Erschütterungen schon die Nadel
+wackeln ließen, genau wie Bewegungen in der Nähe des pico-Ampermeters, welche zu starken Verzerrungen aufgrund der statischen Ladung des Körpers geführt hat. Zudem war die Heizrate nicht ganz konstant und musste immer wieder händisch nachgeregelt werden.
 
 \noindent
 Die starken Abweichungen in der zweiten Methode werden aus den selben Gründen, wie bereits, oben erwähnt zustandekommen. Zudem sollte erwähnt werden, dass sich bei der zweiten Methode

@@ -332,8 +332,8 @@ def cre_polar(data,name):
     #rho = np.concatenate([data,data[::-1]])
     theta = np.linspace(0, np.pi, len(data))
     a=np.arange(0,185,10)
-    plt.polar(theta,data/max(data))
-    plt.polar(theta+np.pi,np.flip(data)/max(data))
+    plt.polar(theta,data/max(data),color = 'orange')
+    plt.polar(theta+np.pi,np.flip(data)/max(data) ,color = 'orange')
     plt.savefig("../pic/polar_"+f"{name}.pdf")
     plt.close()
 
@@ -603,9 +603,9 @@ plt.savefig('../pic/festkoerper_13mm/10_13.pdf')
 
 #-------Fehlstellen--------
 
-x_9_10_75, y_9_10_75   = np.genfromtxt('festkoerper/9x50mm_75mm_9x10mmBlende.dat', unpack = True) 
-x_9_10_625, y_9_10_625 = np.genfromtxt('festkoerper/9x50mm_50plus25halbemm_9x10mmBlende.dat', unpack = True)
-x_9_10_375, y_9_10_375 = np.genfromtxt('festkoerper/9x50mm_37komma5mm_9x10mmBlende.dat', unpack = True)
+x_9_10_75,  y_9_10_75   = np.genfromtxt('festkoerper/9x50mm_75mm_9x16mmBlende.dat', unpack = True) #wurde von 10mm zu 16mm blende in den daten geändert und damit es zu keinen problemen kommt wurde der variablenname biebehalten
+x_9_10_625, y_9_10_625 = np.genfromtxt('festkoerper/9x50mm_50plus25halbemm_9x16mmBlende.dat', unpack = True)
+x_9_10_375, y_9_10_375 = np.genfromtxt('festkoerper/9x50mm_37komma5mm_9x16mmBlende.dat', unpack = True)
 
 plt.figure()
 plt.plot(x_9_10_75, y_9_10_75)

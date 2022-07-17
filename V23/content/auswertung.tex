@@ -47,6 +47,12 @@ da diese bei der Messung vergessen wurden zu notieren.
 Die Winkelabhängigkeit der Resonanzfrequenzen bei ungefähr 2,288 kHz, 3,682 kHz, 4,963 kHz und 7,41 kHz werden zusätzlich untersucht und werden jeweils in der Form eines Polar Plot
 dargestellt. Dieses ist in \autoref{fig:4} (orange eingezeichnet) zu finden.
 
+\noindent
+Wenn sich zu den vermessenen Peaks mit Winkelauflösung die Phasenverschiebung angeschaut wird, so wird klar, dass es sich bei
+ Peak 2 (2,288 kHz) um einen l=1, m=0-Peak handeln muss. Dieser hat eine positive Phase. Peak 3 (3,682 kHz) demnach ein l=2, m=0-Peak. Dieser hat eine negative Phase. 
+ Peak 4 ist l=3, m=0 und hat wieder eine positive Phase. Die Phase ist immer dann positiv, 
+wenn sich auch das Vorzeichen der Kugelflächenfunktion oben und unten unterscheiden. Daraus folgt, dass wirklich die Kugelflächenfunktionen beobachtet wurden.
+
 \begin{figure}
     \centering
     \includegraphics[width=0.75\textwidth]{pic/all.pdf}
@@ -54,6 +60,7 @@ dargestellt. Dieses ist in \autoref{fig:4} (orange eingezeichnet) zu finden.
     \label{fig:4}
   \end{figure}
 
+\noindent
 Die Druckamplitude bei der Resonanzstelle ~ $2,288$kHz hat die Form eines $2{p}_0$-Orbitals, bei der Resonanzstelle ~ $3,682$kHz die Form eines $3{d}_0$-Orbitals,
 bei der Resonanzstelle ~ $4,963$kHz die Form eines $4{f}_0$-Orbitals und bei der Resonanzstelle ~ $7,410$kHz die Form eines $6{h}_0$-Orbitals. Die theoretische Form
 der Orbitale ist in der Skizze ebenfalls eingezeichnet (blau gestrichelt), wobei der Radius in allen Plots willkürlich gewählt ist.
@@ -72,7 +79,7 @@ auch wirklich stattfindet wird exemplarisch in \autoref{fig:3mm} gezeigt.
 
   \noindent
   Wenn die Differenz der Resonanzfrequenzen je Ring gegen die Zwischenringbreite aufgetragen wird (\autoref{fig:aufspaltung}), so fällt auf, dass diese sich fast komplett linear zueinander verhalten.
-  Das Analogon dieser Aufspaltung im Wasserstoffatom wäre der Zeemann-Effekt, welcher beim anlegen eines magnetischen Feldes zu beobachten ist.
+  Das Analogon dieser Aufspaltung im Wasserstoffatom wäre der Zeemann-Effekt, welcher beim Anlegen eines magnetischen Feldes zu beobachten ist.
 
 \begin{figure}
   \centering
@@ -94,7 +101,7 @@ Die untersuchte Winkelverteilung ist in \autoref{fig:wink} zu finden und ist wie
 \begin{figure}
     \centering
     \includegraphics[width=0.75\textwidth]{pic/polar_9mm.pdf}
-    \caption{Die Differenz der Resonanzfrequenz gegen die Ringbreite aufgetragen.}
+    \caption{Druckamplitude gegen Winkel $\theta$ aufgetragen}
     \label{fig:wink}
   \end{figure}
   
@@ -110,30 +117,39 @@ starke Kopplungen nachgestellt. Dies kann in \autoref{fig:kop} gesehen werden.
   \end{figure}
 
 \noindent
-Beobachtet werden jeweils 3 Resonanzfrequenzen. Bei der 15mm Blende  werden diese in Abhängigkeit gemessen und gegenüber dem Winkel in \autoref{fig:polar3} aufgetragen. Die Phasenverschiebung ist in 
+Beobachtet werden jeweils 3 Resonanzfrequenzen. Bei der 15mm Blende  werden diese in Abhängigkeit gemessen und gegenüber dem Winkel in \autoref{fig:polar3} aufgetragen. 
+Erwartet wird, dass bei der \autoref{fig:polar3a} und \autoref{fig:polar3c} ein $\sigma$-Zustand, gebildet aus zwei m=0-Zuständen, sichtbar wird. Bei der \autoref{fig:polar3c}
+ist dies zu erkennen, jedoch ist bei der \autoref{fig:polar3a} dies nicht erkennbar. Die Ursache dafür liegt vermutlich in einer Überlagerung durch ein $\pi$-Zustand. Bei der 
+\autoref{fig:polar3b} wird ein $\pi$-Zustand erwartet, dieser ist jedoch ebenfalls sehr schwer erkennbar, da dieser wahrscheinlich ebenfalls überlagert wird.
+
+\noindent
+Die Phasenverschiebung ist in 
 \autoref{tab:phasen} zu finden.
 
 \begin{figure}
-    \label{fig:polar3}
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{pic/polar_max_294.pdf}
         \caption{Resonanzfrequenz 2294Hz}
+        \label{fig:polar3a}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{pic/polar_max_298.pdf}
         \caption{Resonanzfrequenz 2298Hz}
+        \label{fig:polar3b}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{pic/polar_max_369.pdf}
         \caption{Resonanzfrequenz 2370Hz}
+        \label{fig:polar3c}
     \end{subfigure}
     \caption{Polar Plots der 3 Resonanzfrequenzen bei der 15mm Blende}
+    \label{fig:polar3}
 \end{figure}
 
 \begin{table}
@@ -143,9 +159,9 @@ Beobachtet werden jeweils 3 Resonanzfrequenzen. Bei der 15mm Blende  werden dies
         \toprule
         Ordnung & $\nu_{Res}\,/\,$kHz & obere Phasendiff. $\,/\,°$ & untere Phasendiff. $\,/\,°$ & $\Delta$ Phasendiff. $\,/\,°$\\
         \midrule
-        1 &2,294 &-145 &-51 &196 \\
-        2 &2,298 &-135 &23,5 & 111,5\\
-        3 &2,370 &-32 &138 & 106\\
+        1 &2,294 &-145 &-51 &96 \\
+        2 &2,298 &-135 &23,5 & 158,5\\
+        3 &2,370 &-32 &138 & 170\\
         \bottomrule
     \end{tabular}
     \label{tab:phasen}
@@ -153,13 +169,14 @@ Beobachtet werden jeweils 3 Resonanzfrequenzen. Bei der 15mm Blende  werden dies
 
 
 \subsection{eindimensionaler Festkörper}
-Eine 'Kette' an Resonatoren kann genutzt werden um einen 1-dim Festkörper genähert darzustellen. Dabei wird wie in \autoref{fkp} erläutert zunächst 2 Zylinder
+Eine 'Kette' an Resonatoren kann genutzt werden um einen 1-dim Festkörper genähert darzustellen. Dabei werden, wie in \autoref{fkp} erläutert, zunächst 2 Zylinder
 mit einer 16mm Blende dazwischen, dann 4 und dann 10 Zylinder mit jeweils einer 16mm Blende zwischen den Zylindern aufgebaut und in einem Frequenzspektrum durchgemessen.
 Die Frequenzspektren sind in der \autoref{fig:16mm} zu sehen.
 
 \noindent
 Was dabei auffällt ist, dass sich Gruppen an Maxima bilden, wobei jedes Maxima in einer Gruppe für ein Zylinder steht. Auf den Festkörper übertragen würde jeder 
-Zylinder für ein Band steht und wenn mehr Zylinder hinzugefügt werden auch mehr Bänder entstehen, auf denen sich die elektronen aufhalten können.
+Zylinder für einen Peak im Band stehen und wenn mehr Zylinder hinzugefügt werden auch mehr Peaks in jedem Band entstehen, auf denen sich die Elektronen aufhalten können.
+Die Zustandsdichte in jedem Band nimmt also zu.
 
 \noindent
 Die Freiräume zwischen den Gruppen wären dann die sogenannten Bandlücken, also stellen, an denen sich die Elektronen nicht aufhalten können.
@@ -198,11 +215,12 @@ Das gleiche kann ebenfalls mit Blenden aufgebaut werden, mit einem kleineren Dur
 \end{figure}
 
 \noindent
-Auffällig dabei ist, dass umso kleiner der Durchmesser der Blende ist, desto höher sind die Maxima.
+Auffällig dabei ist, dass umso kleiner der Durchmesser der Blende ist, desto höher sind die Maxima,sowie dass die Abstände zwischen den Peaks kleiner werden und
+ die Bandlücker breiter. Die Breite der Bandlücke nimmt also mit kleinerer Blendengröße zu und das Spektrum nähert sich dem Spektrum eines einzelnen Zylinders an.
 
 
 \subsubsection{Störstellen im Festkörper}
-Es können mit diesem Modell ebenfalls Störstellen im Kristall nachgestellt werden, durch die Variation der länger der Zylinder. In diesem fall wurde ein Zylinder der Länge
+Es können mit diesem Modell ebenfalls Störstellen im Kristall nachgestellt werden, durch die Variation der länger der Zylinder. In diesem Fall wurde ein Zylinder der Länge
 von 50mm gegen ein 37,5mm, 62,5mm und ein 75mm langen Zylidner ausgetauscht und wieder mit dem gleichen Frequenzspektren abgefahren. Dies kann in \autoref{fig:stoer} gesehen werden.
 
 \begin{figure}[H]
@@ -210,12 +228,13 @@ von 50mm gegen ein 37,5mm, 62,5mm und ein 75mm langen Zylidner ausgetauscht und 
     \subfloat[Fehlstelle mit $37,5$mm Zylinder.]{\includegraphics[width=0.45\textwidth]{pic/festkoerper_stoerstelle/37,5mm.pdf}}\hfil
     \subfloat[Fehlstelle mit $62,5$mm Zylinder.]{\includegraphics[width=0.45\textwidth]{pic/festkoerper_stoerstelle/62,5mm.pdf}}\hfil 
     \subfloat[Fehlstelle mit $75$mm Zylinder.]{\includegraphics[width=0.45\textwidth]  {pic/festkoerper_stoerstelle/75mm.pdf}} 
-    \caption{Frequenzspektren für eine Resonatorkette aus neun Zylindern der Länge $50\,$mm und einer Störstelle durch einen Zylinder einer anderen Länge. Zwischenstücke bilden $10\,$mm Blenden.}
+    \caption{Frequenzspektren für eine Resonatorkette aus neun Zylindern der Länge $50\,$mm und einer Störstelle durch einen Zylinder einer anderen Länge. Zwischenstücke bilden $16\,$mm Blenden.}
     \label{fig:fest_stoer}
 \end{figure}
 
 \noindent
-Es ist im Vergleich zum ungestörten Festkörper eine neue Resonanz in der Gruppe zu beobachten, dessen Maxima das der Gruppe deutlich übersteigt.
+Es ist im Vergleich zum ungestörten Festkörper eine neue Resonanz in der Gruppe zu beobachten, dessen Maxima das der Gruppe deutlich übersteigt. zusätzlich kann beobachtet wrden, dass
+sich neue Zustände in der Bandlücke ausbilden, analog zur Dotierung eines Festkörpers.
 
 \subsubsection{abwechselnden Zylinderlängen}
 Um einen Festkörper, welcher aus 2 unterschiedlichen Elementen besteht nachzustellen, wie z.B. eine GaAs-Kristall, wird abwechselnd ein 50mm und ein 75mm langer Zylinder
