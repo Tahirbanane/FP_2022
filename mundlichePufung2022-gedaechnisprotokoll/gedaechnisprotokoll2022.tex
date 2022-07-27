@@ -1,0 +1,197 @@
+\documentclass[
+  bibliography=totoc,     % Literatur im Inhaltsverzeichnis
+  captions=tableheading,  % Tabellenüberschriften
+  titlepage=firstiscover, % Titelseite ist Deckblatt
+]{scrartcl}
+
+% Paket float verbessern
+\usepackage{scrhack}
+
+% Warnung, falls nochmal kompiliert werden muss
+\usepackage[aux]{rerunfilecheck}
+
+% unverzichtbare Mathe-Befehle
+\usepackage{amsmath}
+% viele Mathe-Symbole
+\usepackage{amssymb}
+% Erweiterungen für amsmath
+\usepackage{mathtools}
+
+% Fonteinstellungen
+\usepackage{fontspec}
+% Latin Modern Fonts werden automatisch geladen
+% Alternativ zum Beispiel:
+%\setromanfont{Libertinus Serif}
+%\setsansfont{Libertinus Sans}
+%\setmonofont{Libertinus Mono}
+
+% Wenn man andere Schriftarten gesetzt hat,
+% sollte man das Seiten-Layout neu berechnen lassen
+\recalctypearea{}
+
+% deutsche Spracheinstellungen
+\usepackage[ngerman]{babel}
+
+
+\usepackage[
+  math-style=ISO,    % ┐
+  bold-style=ISO,    % │
+  sans-style=italic, % │ ISO-Standard folgen
+  nabla=upright,     % │
+  partial=upright,   % ┘
+  warnings-off={           % ┐
+    mathtools-colon,       % │ unnötige Warnungen ausschalten
+    mathtools-overbracket, % │
+  },                       % ┘
+]{unicode-math}
+
+% traditionelle Fonts für Mathematik
+\setmathfont{Latin Modern Math}
+% Alternativ zum Beispiel:
+%\setmathfont{Libertinus Math}
+
+\setmathfont{XITS Math}[range={scr, bfscr}]
+\setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
+
+% Zahlen und Einheiten
+\usepackage[
+  locale=DE,                   % deutsche Einstellungen
+  separate-uncertainty=true,   % immer Unsicherheit mit \pm
+  per-mode=symbol-or-fraction, % / in inline math, fraction in display math
+]{siunitx}
+
+% chemische Formeln
+\usepackage[
+  version=4,
+  math-greek=default, % ┐ mit unicode-math zusammenarbeiten
+  text-greek=default, % ┘
+]{mhchem}
+
+% richtige Anführungszeichen
+\usepackage[autostyle]{csquotes}
+
+% schöne Brüche im Text
+\usepackage{xfrac}
+
+% Standardplatzierung für Floats einstellen
+\usepackage{float}
+\floatplacement{figure}{htbp}
+\floatplacement{table}{htbp}
+
+% Floats innerhalb einer Section halten
+\usepackage[
+  section, % Floats innerhalb der Section halten
+  below,   % unterhalb der Section aber auf der selben Seite ist ok
+]{placeins}
+
+% Seite drehen für breite Tabellen: landscape Umgebung
+\usepackage{pdflscape}
+
+% Captions schöner machen.
+\usepackage[
+  labelfont=bf,        % Tabelle x: Abbildung y: ist jetzt fett
+  font=small,          % Schrift etwas kleiner als Dokument
+  width=0.9\textwidth, % maximale Breite einer Caption schmaler
+]{caption}
+% subfigure, subtable, subref
+\usepackage{subcaption}
+
+% Grafiken können eingebunden werden
+\usepackage{graphicx}
+
+% schöne Tabellen
+\usepackage{booktabs}
+
+% Verbesserungen am Schriftbild
+\usepackage{microtype}
+
+% Literaturverzeichnis
+\usepackage[
+  backend=biber,
+]{biblatex}
+% Quellendatenbank
+\addbibresource{lit.bib}
+\addbibresource{programme.bib}
+
+% Hyperlinks im Dokument
+\usepackage[
+  german,
+  unicode,        % Unicode in PDF-Attributen erlauben
+  pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
+  pdfcreator={},  % ┐ PDF-Attribute säubern
+  pdfproducer={}, % ┘
+]{hyperref}
+% erweiterte Bookmarks im PDF
+\usepackage{bookmark}
+
+% Trennung von Wörtern mit Strichen
+\usepackage[shortcuts]{extdash}
+
+\publishers{TU Dortmund – Fakultät Physik}
+
+\subject{Gedächnisprotokoll}
+\title{FP-Prüfung}
+\subtitle{bei Prof. Westphal}
+\date{%
+  2022
+}
+
+\begin{document}
+
+\maketitle
+%\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+\section{Vorwort}
+Meine Abgabepartnerin und ich hatten hintereinander eins zu eins die gleichen Versuche, zufällig. Daher 
+haben wir nur ein Gedächnisprotokoll erstellt. Nicht alle Fragen wurden uns beiden gestellt. Das Protokoll ist aus meiner Sicht geschrieben, jedoch 
+Fragen die mir nicht gestellt wurden wurden ergänzt.
+
+\section{Prüfung}
+
+\begin{itemize}
+    \item gestartet mit Dipolrelaxation:
+    \item erklären des Versuchziels: Bestimmung der materialspezifischen Aktivierungsenergie, sowie die charakteristische Relaxationszeit 
+    \item Aufbau an die Tafel gemalt und erklärt wofür welche Geräte da sind
+    \item Frage: Was für eine Probe haben wir? Kaliumbromid
+    \item kam die Frage was wir überhaupt messen und wie wir es messen: Strom, Größenordnung Micro-ampere, durch Induktion 
+    \item Frage: warum wird ein Strom induziert, ein Dipol der ausgerichtet ist seie ja elek. neutral. Antwort: während sich der Dipol dreht wird der Strom induziert
+    \item nächste Frage von Frau Siegmann, wie groß ich die Probe einschätzen würde (wir konnten ja nicht in den Versuch reinschauen)
+        Antwort: 6-9mm in einem Altprotokoll gelesen. Würde aber das auch anhand der Größenordnung des gemessenen Stroms
+        vermuten 
+    \item follow up Frage: Warum ein Spannungsgerät im bereich bis 1kV benutzt werde und kein billigeres das 11kV-5kV könne?
+        Antwort: (etwas kniffelig da alleine drauf zu kommen, aber mit etwas Hilfe: indem die Frage kam was denn passiere, wenn
+                    ein Plattenkondensator einen sehr kleinen Abstand hätte, aber ne hohe Spannung anliegt) ->Landungsübersprung 
+    \item wurde noch gebeten ein Plot zu zeichnen: habe erklärt das am spannendsten der I-T Plot ist, den Untergrund sowie beide Peaks 
+        eingezeichnet und erklärt wie die Peaks zustande kommen, sowie das dipole in der Luft seinen wie wasser, die den 2. Peak erklären
+      
+    \item sollte zu dem I-T plot sagen ob der Strom bei 0 anfängt (sah in meiner Zeichnung so aus) und sagen warum das nicht so ist. 
+    \item wurde gefragt bei was für temperaturen die Peaks seien: 1. bei ~ -13°C und 2. bei umdie 50°C da wir bis 50°C gemessen haben und er erst bei den letzten
+    Messpunkten abgefallen ist 
+    \item Frau Siegmann hat dann gefragt wie wir aus der kurve die Aktivierungsenergie bestimmen, habe dann erklärt was wir für eine fit-Funktion benutzt haben und dass wir mit den durch Python bestimmten Parametern die Aktivierungsenergie bestimmt haben, wobei sie dann noch die Größenordnungen wissen wollte.
+    \item sollte noch erklären was denn für Dipole in der luft seien: Antwort Wasser und CO2. Hab dann noch ein Wasserteilchen eingezeichnet und dort das 
+    Dipolmoment eingemalt \\ \newline
+
+    \item zweiten Versuch durfte ich mir aussuchen: Habe Tomographie gewählt 
+    \item erklärt das die Tomographie ein bildgebendes Verfahren ist, das durch messen bei unterscheidlichen Raumwinkel aufgrund der materialabhängigen Absorbtioskoeffizienten
+        ein Bild erstellt werden kann 
+    \item Versuchsaufbau eingezeichnet, Messvorgang erklärt, zusätzlich wie ein Szintillatorsdetektor funktioniert und ein Multichannel Analyzer
+    \item wurde dann wieder gebeten einen Plot zu malen, diesmal Strahlungsverlauf: erklärt was der Photopeak und die Comptonkante ist
+    \item Frage: warum nur der Photopeak betrachtet wird: erstmal die unterscheidlichen WW zwischen Materie und Photonen erklärt und das wir nur wissen wollen wieviel absorbiert wurde und daher nur uns den Photopeak anschauen
+    \item erwähnt dass unsere messung sehr ungenau war weil wir keinen würfel richtig zuordnen konnten, Frau Siegmann wollte dann wissen wieso das so ist und wie man die messung verbessern könnte.
+    Die Antwort war, dass bei dem Würfel aus verschiedenen Materialien diagonale Projektionen auch umliegende Würfel getroffen werden weil der Strahl im gegensatz zu den Würfeln groß ist.
+    Allgemein könnte die Messung durch eine längere Messdauer verbessert werden.
+\end{itemize}
+
+Wurde dann gebeten raus zu gehen und durfte nach kurzer Zeit wieder rein kommen und habe meine Note erfahren und mit den beiden noch gequatscht.
+
+\section{Note}
+Die Note bei uns beiden war eine 1.0.
+
+\section{Fazit}
+Die Prüfung lief sehr gut. Obwohl paar tricky Fragen dabei waren konnten alle (mit etwas Unterstützung) gemeistert werden. Die Antmosphäre war
+sehr entspannt und die anfängliche Unsicherheit ist sehr schnell während der Prüfung verflogen. Herr Prof. Westphal hat zwischendurch zwar den Eindruck gemacht
+nicht ganz zuzuhören, hat zwischendurch aber trotzdessen interessante Fragen gestellt. Das Fragenverhältnis würde ich auf 50:50 schätzen.
+
+\end{document}

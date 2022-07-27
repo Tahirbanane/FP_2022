@@ -1,0 +1,6 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Vorwort}{3}{section.1}%
+\contentsline {section}{\numberline {2}Prüfung}{3}{section.2}%
+\contentsline {section}{\numberline {3}Note}{4}{section.3}%
+\contentsline {section}{\numberline {4}Fazit}{4}{section.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
